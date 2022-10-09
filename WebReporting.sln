@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebReporting", "WebReporting\WebReporting.csproj", "{3348E153-8221-47BF-9484-8BC4370E7BAF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_BPC", "ClassLibrary_BPC\ClassLibrary_BPC.csproj", "{1806DB1F-952F-4185-9787-10FC0B6CF4BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3348E153-8221-47BF-9484-8BC4370E7BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3348E153-8221-47BF-9484-8BC4370E7BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3348E153-8221-47BF-9484-8BC4370E7BAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3348E153-8221-47BF-9484-8BC4370E7BAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1806DB1F-952F-4185-9787-10FC0B6CF4BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1806DB1F-952F-4185-9787-10FC0B6CF4BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1806DB1F-952F-4185-9787-10FC0B6CF4BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1806DB1F-952F-4185-9787-10FC0B6CF4BF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
