@@ -58,6 +58,18 @@ namespace WebReporting
                         case "TA001":
                             viewerTA("TA001.rpt", objReportjob, objList_whose);
                             break;
+                        case "TA002":
+                            viewerTA("TA002.rpt", objReportjob, objList_whose);
+                            break;
+                        case "TA003":
+                            viewerTA("TA003.rpt", objReportjob, objList_whose);
+                            break;
+                        case "TA004":
+                            viewerTA("TA004.rpt", objReportjob, objList_whose);
+                            break;
+                        case "TA005":
+                            viewerTA("TA005.rpt", objReportjob, objList_whose);
+                            break;
 
                         default:
                             Response.Redirect("404.aspx?message=" + "Report Not Found");
@@ -67,7 +79,7 @@ namespace WebReporting
 
                     //-- Update Status (Prevent duplicate calls)
                     objReportjob.reportjob_status = "F";
-                    ctReport.updateStatus(objReportjob);
+                    //ctReport.updateStatus(objReportjob);
                 }
                 else
                 {
@@ -185,7 +197,23 @@ namespace WebReporting
                 objStr.Append(" AND (TIMECARD_WORKDATE BETWEEN '" + obj.reportjob_fromdate.ToString("MM/dd/yyyy") + "' AND '" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "')");
                 objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
                 dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_TIMECARD");
-                ds.Tables.Add(dt);                
+                ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_TR_TIMELEAVE");
+                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                objStr.Append(" AND (TIMELEAVE_FROMDATE >= '" + obj.reportjob_fromdate.ToString("MM/dd/yyyy") + "' AND TIMELEAVE_TODATE <= '" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "')");
+                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_TIMELEAVE");
+                ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_MT_LEAVE");
+                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_MT_LEAVE");
+                ds.Tables.Add(dt);
 
                 strError = "RD.SetDataSource";
                 _RD.SetDataSource(ds);

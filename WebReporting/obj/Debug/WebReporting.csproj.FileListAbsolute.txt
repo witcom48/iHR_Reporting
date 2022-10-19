@@ -27,3 +27,10 @@ D:\Work\BPC\Project\Webbase\iHR_202208\WebReporting\WebReporting\bin\ClassLibrar
 D:\Work\BPC\Project\Webbase\iHR_202208\WebReporting\WebReporting\bin\ClassLibrary_BPC.pdb
 D:\Work\BPC\Project\Webbase\iHR_202208\WebReporting\WebReporting\obj\Debug\WebReporting.dll
 D:\Work\BPC\Project\Webbase\iHR_202208\WebReporting\WebReporting\obj\Debug\WebReporting.pdb
+D:\IHR\iHR_Reporting\WebReporting\bin\WebReporting.dll
+D:\IHR\iHR_Reporting\WebReporting\bin\WebReporting.pdb
+D:\IHR\iHR_Reporting\WebReporting\bin\ClassLibrary_BPC.dll
+D:\IHR\iHR_Reporting\WebReporting\bin\ClassLibrary_BPC.pdb
+D:\IHR\iHR_Reporting\WebReporting\obj\Debug\WebReporting.csprojResolveAssemblyReference.cache
+D:\IHR\iHR_Reporting\WebReporting\obj\Debug\WebReporting.dll
+D:\IHR\iHR_Reporting\WebReporting\obj\Debug\WebReporting.pdb

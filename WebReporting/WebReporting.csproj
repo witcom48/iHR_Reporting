@@ -116,10 +116,18 @@
     </Compile>
     <Compile Include="cls_Config.cs" />
     <Compile Include="cls_utility.cs" />
+    <Compile Include="Dataset\dsEMPmodule.cs">
+      <DependentUpon>dsEMPmodule.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Dataset\dsEMPmodule.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsEMPmodule.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\dsTAmodule.cs">
+      <DependentUpon>dsTAmodule.xsd</DependentUpon>
+      <SubType>Component</SubType>
     </Compile>
     <Compile Include="Dataset\dsTAmodule.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -150,6 +158,30 @@
       <DependentUpon>TA001.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report\TA002.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TA002.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\TA003.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TA003.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\TA004.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TA004.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\TA005.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TA005.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -177,11 +209,30 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TA001.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\TA002.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TA002.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TA003.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TA003.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TA004.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TA004.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TA005.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TA005.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
     <None Include="Dataset\dsEMPmodule.xsc">
       <DependentUpon>dsEMPmodule.xsd</DependentUpon>
     </None>
@@ -219,7 +270,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>53738</DevelopmentServerPort>
+          <DevelopmentServerPort>8780</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
