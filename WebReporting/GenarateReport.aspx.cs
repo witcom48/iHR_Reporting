@@ -366,8 +366,12 @@ namespace WebReporting
 
 
                 objStr = new StringBuilder();
-                objStr.Append(" SELECT *");
-                objStr.Append(" FROM HRM_TR_EMPDEP");
+                objStr.Append(" SELECT HRM_MT_WORKER.COMPANY_CODE, HRM_MT_WORKER.WORKER_CODE");
+                objStr.Append(", ISNULL((SELECT TOP 1 EMPDEP_DATE FROM HRM_TR_EMPDEP WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPDEP_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPDEP_DATE DESC), '') AS EMPDEP_DATE");
+                objStr.Append(", ISNULL((SELECT TOP 1 EMPDEP_LEVEL01 FROM HRM_TR_EMPDEP WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPDEP_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPDEP_DATE DESC), '') AS EMPDEP_LEVEL01");
+                objStr.Append(", ISNULL((SELECT TOP 1 EMPDEP_LEVEL02 FROM HRM_TR_EMPDEP WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPDEP_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPDEP_DATE DESC), '') AS EMPDEP_LEVEL02");
+                objStr.Append(", ISNULL((SELECT TOP 1 EMPDEP_LEVEL03 FROM HRM_TR_EMPDEP WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPDEP_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPDEP_DATE DESC), '') AS EMPDEP_LEVEL03");
+                objStr.Append(" FROM HRM_MT_WORKER");
                 objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
                 objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
                 dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_EMPDEP");
