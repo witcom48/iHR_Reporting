@@ -91,6 +91,10 @@ namespace WebReporting
                             viewerTax("PA005.rpt", objReportjob, objList_whose);
                             break;
 
+                        case "PA006":
+                            viewerTax("PA006.rpt", objReportjob, objList_whose);
+                            break;
+
                         default:
                             Response.Redirect("404.aspx?message=" + "Report Not Found");
                             break;
@@ -455,6 +459,8 @@ namespace WebReporting
                 CrystalDecisions.Shared.ParameterDiscreteValue param5Range = new ParameterDiscreteValue();
                 CrystalDecisions.Shared.ParameterField param6Field = new ParameterField();
                 CrystalDecisions.Shared.ParameterDiscreteValue param6Range = new ParameterDiscreteValue();
+                CrystalDecisions.Shared.ParameterField param7Field = new ParameterField();
+                CrystalDecisions.Shared.ParameterDiscreteValue param7Range = new ParameterDiscreteValue();
 
                 strError = "param1Field.ParameterFieldName";
 
@@ -487,6 +493,14 @@ namespace WebReporting
                 param6Range.Value = obj.reportjob_paydate;
                 param6Field.CurrentValues.Add(param6Range);
                 paramFields.Add(param6Field);
+
+                if (rptName == "PA006.rpt") 
+                {
+                    param7Field.ParameterFieldName = "MMM";
+                    param7Range.Value = "1";
+                    param7Field.CurrentValues.Add(param7Range);
+                    paramFields.Add(param7Field);
+                } else { }
 
 
                 cls_ctConnection objConn = new cls_ctConnection();
@@ -547,7 +561,7 @@ namespace WebReporting
                 objStr.Append(" SELECT *");
                 objStr.Append(" FROM HRM_TR_PAYTRAN");
                 objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                if (rptName == "PA005.rpt")
+                if (rptName == "PA005.rpt" || rptName == "PA006.rpt")
                 {
                     objStr.Append(" AND PAYTRAN_PAYDATE = '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "'");
                 } else {
