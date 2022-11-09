@@ -87,6 +87,10 @@ namespace WebReporting
                             viewerTax("PA004.rpt", objReportjob, objList_whose);
                             break;
 
+                        case "PA005":
+                            viewerTax("PA005.rpt", objReportjob, objList_whose);
+                            break;
+
                         default:
                             Response.Redirect("404.aspx?message=" + "Report Not Found");
                             break;
@@ -526,6 +530,7 @@ namespace WebReporting
                 objStr.Append(" SELECT *");
                 objStr.Append(" FROM HRM_TR_COMADDRESS");
                 objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                objStr.Append(" AND COMBRANCH_CODE = '00000'");
                 dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_COMADDRESS");
                 ds.Tables.Add(dt);
 
@@ -542,7 +547,12 @@ namespace WebReporting
                 objStr.Append(" SELECT *");
                 objStr.Append(" FROM HRM_TR_PAYTRAN");
                 objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                objStr.Append(" AND PAYTRAN_PAYDATE <= '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "'");
+                if (rptName == "PA005.rpt")
+                {
+                    objStr.Append(" AND PAYTRAN_PAYDATE = '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "'");
+                } else {
+                    objStr.Append(" AND PAYTRAN_PAYDATE <= '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "'");
+                };
                 objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
                 dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_PAYTRAN");
                 ds.Tables.Add(dt);
