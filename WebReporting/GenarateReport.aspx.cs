@@ -70,6 +70,9 @@ namespace WebReporting
                         case "TA005":
                             viewerTA("TA005.rpt", objReportjob, objList_whose);
                             break;
+                        case "TA006":
+                            viewerTA("TA006.rpt", objReportjob, objList_whose);
+                            break;
                         //PA
                         case "PA001":
                             viewerPA("PA001.rpt", objReportjob, objList_whose);
