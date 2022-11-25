@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <publishData>
   <publishProfile publishUrl="D:\Work\BPC\Onweb publish\HRM_Reporting" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="Profile1" publishMethod="FileSystem" replaceMatchingFiles="True" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
-    <file relUrl="Web.config" publishTime="10/20/2022 12:11:49" />
+    <file relUrl="Web.config" publishTime="10/28/2022 09:52:30" />
     <file relUrl="Site.Master" publishTime="10/10/2022 08:58:58" />
     <file relUrl="Account/Web.config" publishTime="10/10/2022 08:58:58" />
     <file relUrl="GenarateReport.aspx" publishTime="10/10/2022 08:58:58" />
     <file relUrl="Account/Register.aspx" publishTime="10/10/2022 08:58:58" />
-    <file relUrl="bin/WebReporting.dll" publishTime="10/20/2022 12:20:52" />
-    <file relUrl="bin/ClassLibrary_BPC.dll" publishTime="10/20/2022 12:20:52" />
+    <file relUrl="bin/WebReporting.dll" publishTime="11/15/2022 10:08:32" />
+    <file relUrl="bin/ClassLibrary_BPC.dll" publishTime="11/15/2022 10:08:31" />
     <file relUrl="404.aspx" publishTime="10/10/2022 08:58:58" />
     <file relUrl="Account/ChangePasswordSuccess.aspx" publishTime="10/10/2022 08:58:58" />
     <file relUrl="Account/Login.aspx" publishTime="10/10/2022 08:58:58" />
     <file relUrl="Styles/Site.css" publishTime="10/10/2022 08:58:58" />
     <file relUrl="Scripts/jquery-1.4.1.js" publishTime="10/10/2022 08:58:58" />
     <file relUrl="Account/ChangePassword.aspx" publishTime="10/10/2022 08:58:58" />
-    <file relUrl="bin/WebReporting.pdb" publishTime="10/20/2022 12:20:52" />
-    <file relUrl="Default.aspx" publishTime="10/10/2022 08:58:58" />
+    <file relUrl="bin/WebReporting.pdb" publishTime="11/15/2022 10:08:32" />
     <file relUrl="Global.asax" publishTime="10/10/2022 08:58:58" />
+    <file relUrl="bin/ClassLibrary_BPC.pdb" publishTime="11/15/2022 10:08:31" />
     <file relUrl="Scripts/jquery-1.4.1-vsdoc.js" publishTime="10/10/2022 08:58:58" />
     <file relUrl="About.aspx" publishTime="10/10/2022 08:58:58" />
-    <file relUrl="bin/ClassLibrary_BPC.pdb" publishTime="10/20/2022 12:20:52" />
+    <file relUrl="Default.aspx" publishTime="10/10/2022 08:58:58" />
     <file relUrl="Scripts/jquery-1.4.1.min.js" publishTime="10/10/2022 08:58:58" />
   </publishProfile>
 </publishData>
