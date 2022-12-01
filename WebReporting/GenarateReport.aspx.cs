@@ -76,8 +76,20 @@ namespace WebReporting
                         case "TA007":
                             viewerTA("TA007.rpt", objReportjob, objList_whose);
                             break;
+                        case "TA008":
+                            viewerTA("TA008.rpt", objReportjob, objList_whose);
+                            break;
+                        case "TA011":
+                            viewerTA("TA011.rpt", objReportjob, objList_whose);
+                            break;
                         case "TA012":
                             viewerTA("TA012.rpt", objReportjob, objList_whose);
+                            break;
+                        case "TA013":
+                            viewerTA("TA013.rpt", objReportjob, objList_whose);
+                            break;
+                        case "TA014":
+                            viewerTA("TA014.rpt", objReportjob, objList_whose);
                             break;
                         case "TA015":
                             viewerTA("TA015.rpt", objReportjob, objList_whose);
@@ -125,7 +137,7 @@ namespace WebReporting
                             break;
 
                         case "PA010":
-                            viewerPA010("PA010.rpt", objReportjob, objList_whose);
+                            viewerPA("PA010.rpt", objReportjob, objList_whose);
                             break;
 
                         case "PA011":
@@ -343,6 +355,72 @@ namespace WebReporting
                 objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
                 dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_TIMESHIFT");
                 ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_TR_TIMEDAYTYPE");
+                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                objStr.Append(" AND (TIMEDAYTYPE_WORKDATE BETWEEN '" + obj.reportjob_fromdate.ToString("MM/dd/yyyy") + "' AND '" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "')");
+                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_TIMEDAYTYPE");
+                ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_TR_EMPSALARY");
+                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_EMPSALARY");
+                ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_MT_POSITION");
+                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_MT_POSITION");
+                ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT HRM_MT_WORKER.COMPANY_CODE, HRM_MT_WORKER.WORKER_CODE");
+                objStr.Append(", ISNULL((SELECT TOP 1 EMPPOSITION_DATE FROM HRM_TR_EMPPOSITION WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPPOSITION_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPPOSITION_DATE DESC), '') AS EMPPOSITION_DATE");
+                objStr.Append(", ISNULL((SELECT TOP 1 EMPPOSITION_POSITION FROM HRM_TR_EMPPOSITION WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPPOSITION_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPPOSITION_DATE DESC), '') AS EMPPOSITION_POSITION");
+                objStr.Append(" FROM HRM_MT_WORKER");
+                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_EMPPOSITION");
+                ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_MT_REASON");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_MT_REASON");
+                ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_TR_WAGEDAY");
+                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                objStr.Append(" AND (WAGEDAY_DATE BETWEEN '" + obj.reportjob_fromdate.ToString("MM/dd/yyyy") + "' AND '" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "')");
+                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_WAGEDAY");
+                ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_MT_LOCATION");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_MT_LOCATION");
+                ds.Tables.Add(dt);
+
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_TR_TIMEONSITE");
+                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                objStr.Append(" AND (TIMEONSITE_WORKDATE BETWEEN '" + obj.reportjob_fromdate.ToString("MM/dd/yyyy") + "' AND '" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "')");
+                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_TIMEONSITE");
+                ds.Tables.Add(dt);
+
+
 
 
                 strError = "RD.SetDataSource";
@@ -1010,184 +1088,7 @@ namespace WebReporting
 
         }
 
-        public void viewerPA010(string rptName, cls_SYSReportjob obj, List<cls_SYSReportjobwhose> objListWhose)
-        {
-            string strError = "viewer1";
-            try
-            {
-                CrystalReportViewer1.RefreshReport();
-
-                DataSet ds = new DataSet();
-                string strPath = Server.MapPath(".\\Report\\" + rptName);
-
-                _RD.Load(strPath);
-
-                CrystalDecisions.Shared.ParameterFields paramFields = new ParameterFields();
-                CrystalDecisions.Shared.ParameterField param1Field = new ParameterField();
-                CrystalDecisions.Shared.ParameterDiscreteValue param1Range = new ParameterDiscreteValue();
-                CrystalDecisions.Shared.ParameterField param2Field = new ParameterField();
-                CrystalDecisions.Shared.ParameterDiscreteValue param2Range = new ParameterDiscreteValue();
-                CrystalDecisions.Shared.ParameterField param3Field = new ParameterField();
-                CrystalDecisions.Shared.ParameterDiscreteValue param3Range = new ParameterDiscreteValue();
-                CrystalDecisions.Shared.ParameterField param4Field = new ParameterField();
-                CrystalDecisions.Shared.ParameterDiscreteValue param4Range = new ParameterDiscreteValue();
-                CrystalDecisions.Shared.ParameterField param5Field = new ParameterField();
-                CrystalDecisions.Shared.ParameterDiscreteValue param5Range = new ParameterDiscreteValue();
-                CrystalDecisions.Shared.ParameterField param6Field = new ParameterField();
-                CrystalDecisions.Shared.ParameterDiscreteValue param6Range = new ParameterDiscreteValue();
-                CrystalDecisions.Shared.ParameterField param7Field = new ParameterField();
-                CrystalDecisions.Shared.ParameterDiscreteValue param7Range = new ParameterDiscreteValue();
-
-                strError = "param1Field.ParameterFieldName";
-
-                param1Field.ParameterFieldName = "Language";
-                param1Range.Value = obj.reportjob_language;
-                param1Field.CurrentValues.Add(param1Range);
-                paramFields.Add(param1Field);
-
-                param2Field.ParameterFieldName = "CompanyCode";
-                param2Range.Value = obj.company_code;
-                param2Field.CurrentValues.Add(param2Range);
-                paramFields.Add(param2Field);
-
-                param3Field.ParameterFieldName = "FromDate";
-                param3Range.Value = obj.reportjob_fromdate;
-                param3Field.CurrentValues.Add(param3Range);
-                paramFields.Add(param3Field);
-
-                param4Field.ParameterFieldName = "ToDate";
-                param4Range.Value = obj.reportjob_todate;
-                param4Field.CurrentValues.Add(param4Range);
-                paramFields.Add(param4Field);
-
-                param5Field.ParameterFieldName = "PrintBy";
-                param5Range.Value = obj.created_by;
-                param5Field.CurrentValues.Add(param5Range);
-                paramFields.Add(param5Field);
-
-                param6Field.ParameterFieldName = "PayDate";
-                param6Range.Value = obj.reportjob_paydate;
-                param6Field.CurrentValues.Add(param6Range);
-                paramFields.Add(param6Field);
-
-
-                cls_ctConnection objConn = new cls_ctConnection();
-                objConn.doConnect();
-
-                string strEmpID = "";
-
-                foreach (cls_SYSReportjobwhose model in objListWhose)
-                {
-                    strEmpID += "'" + model.worker_code + "',";
-                }
-
-                if (strEmpID.Length > 0)
-                    strEmpID = strEmpID.TrimEnd(',');
-
-
-                StringBuilder objStr = new StringBuilder();
-                DataTable dt = new DataTable();
-
-                objStr.Append(" SELECT *");
-                objStr.Append(" FROM HRM_MT_INITIAL");
-                dt = objConn.doGetTable(objStr.ToString(), "HRM_MT_INITIAL");
-                ds.Tables.Add(dt);
-
-                objStr = new StringBuilder();
-                objStr.Append(" SELECT *");
-                objStr.Append(" FROM HRM_MT_COMPANY");
-                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                dt = objConn.doGetTable(objStr.ToString(), "HRM_MT_COMPANY");
-                ds.Tables.Add(dt);
-
-                objStr = new StringBuilder();
-                objStr.Append(" SELECT *");
-                objStr.Append(" FROM HRM_MT_WORKER");
-                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
-                dt = objConn.doGetTable(objStr.ToString(), "HRM_MT_WORKER");
-                ds.Tables.Add(dt);
-
-                objStr = new StringBuilder();
-                objStr.Append(" SELECT *");
-                objStr.Append(" FROM HRM_TR_PAYTRAN");
-                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                objStr.Append(" AND PAYTRAN_PAYDATE = '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "'");
-                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
-                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_PAYTRAN");
-                ds.Tables.Add(dt);
-
-                objStr = new StringBuilder();
-                objStr.Append(" SELECT *");
-                objStr.Append(" FROM HRM_TR_EMPSALARY");
-                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
-                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_EMPSALARY");
-                ds.Tables.Add(dt);
-
-                objStr = new StringBuilder();
-                objStr.Append(" SELECT *");
-                objStr.Append(" FROM HRM_TR_EMPPROVIDENT");
-                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
-                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_EMPPROVIDENT");
-                ds.Tables.Add(dt);
-
-                objStr = new StringBuilder();
-                objStr.Append(" SELECT HRM_MT_WORKER.COMPANY_CODE, HRM_MT_WORKER.WORKER_CODE");
-                objStr.Append(", ISNULL((SELECT TOP 1 EMPDEP_DATE FROM HRM_TR_EMPDEP WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPDEP_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPDEP_DATE DESC), '') AS EMPDEP_DATE");
-                objStr.Append(", ISNULL((SELECT TOP 1 EMPDEP_LEVEL01 FROM HRM_TR_EMPDEP WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPDEP_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPDEP_DATE DESC), '') AS EMPDEP_LEVEL01");
-                objStr.Append(", ISNULL((SELECT TOP 1 EMPDEP_LEVEL02 FROM HRM_TR_EMPDEP WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPDEP_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPDEP_DATE DESC), '') AS EMPDEP_LEVEL02");
-                objStr.Append(", ISNULL((SELECT TOP 1 EMPDEP_LEVEL03 FROM HRM_TR_EMPDEP WHERE COMPANY_CODE=HRM_MT_WORKER.COMPANY_CODE AND WORKER_CODE=HRM_MT_WORKER.WORKER_CODE AND EMPDEP_DATE<='" + obj.reportjob_todate.ToString("MM/dd/yyyy") + "' ORDER BY EMPDEP_DATE DESC), '') AS EMPDEP_LEVEL03");
-                objStr.Append(" FROM HRM_MT_WORKER");
-                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
-                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_EMPDEP");
-                ds.Tables.Add(dt);
-
-                objStr = new StringBuilder();
-                objStr.Append(" SELECT *");
-                objStr.Append(" FROM HRM_TR_PAYPF");
-                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
-                objStr.Append(" AND PAYPF_DATE = '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "'");
-                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_PAYPF");
-                ds.Tables.Add(dt);
-
-                objStr = new StringBuilder();
-                objStr.Append(" SELECT *");
-                objStr.Append(" FROM HRM_MT_DEP");
-                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                dt = objConn.doGetTable(objStr.ToString(), "HRM_MT_DEP");
-                ds.Tables.Add(dt);
-
-
-                strError = "RD.SetDataSource";
-                _RD.SetDataSource(ds);
-
-                CrystalReportViewer1.EnableParameterPrompt = false;
-
-                strError = "CrystalReportViewer1.ParameterFieldInfo";
-                CrystalReportViewer1.ParameterFieldInfo = paramFields;
-
-                strError = "CrystalReportViewer1.ReportSource";
-                CrystalReportViewer1.ReportSource = _RD;
-
-                ds.Dispose();
-
-
-                GC.Collect();
-                GC.WaitForPendingFinalizers();
-                GC.Collect();
-            }
-            catch (Exception ex)
-            {
-                GC.Collect();
-                GC.WaitForPendingFinalizers();
-                GC.Collect();
-            }
-
-        }
+        
 
         
     }
