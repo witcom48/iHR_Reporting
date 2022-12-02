@@ -297,6 +297,12 @@
       <DependentUpon>TA008.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Report\TA009.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TA009.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Report\TA012.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -435,6 +441,10 @@
     <EmbeddedResource Include="Report\TA008.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TA008.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\TA009.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>TA009.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Report\TA012.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
