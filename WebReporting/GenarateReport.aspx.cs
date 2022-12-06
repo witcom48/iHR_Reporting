@@ -82,6 +82,9 @@ namespace WebReporting
                         case "TA009":
                             viewerTA("TA009.rpt", objReportjob, objList_whose);
                             break;
+                        case "TA010":
+                            viewerTA("TA010.rpt", objReportjob, objList_whose);
+                            break;
                         case "TA011":
                             viewerTA("TA011.rpt", objReportjob, objList_whose);
                             break;
@@ -423,7 +426,14 @@ namespace WebReporting
                 dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_TIMEONSITE");
                 ds.Tables.Add(dt);
 
-
+                objStr = new StringBuilder();
+                objStr.Append(" SELECT *");
+                objStr.Append(" FROM HRM_TR_PAYDG");
+                objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
+                objStr.Append(" AND PAYDG_PAYDATE = '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "'");
+                objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
+                dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_PAYDG");
+                ds.Tables.Add(dt);
 
 
                 strError = "RD.SetDataSource";
