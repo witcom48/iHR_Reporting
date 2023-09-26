@@ -180,6 +180,10 @@ namespace WebReporting
                             viewerPA("PA018.rpt", objReportjob, objList_whose);
                             break;
 
+                        case "PR1":
+                            viewerPA("PR1.rpt", objReportjob, objList_whose);
+                            break;
+
                         default:
                             Response.Redirect("404.aspx?message=" + "Report Not Found");
                             break;
