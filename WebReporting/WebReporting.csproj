@@ -127,10 +127,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsEMPmodule.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\dsPAmodule.cs">
+      <DependentUpon>dsPAmodule.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Dataset\dsPAmodule.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsPAmodule.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Dataset\dsPaySlip.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsPaySlip.xsd</DependentUpon>
     </Compile>
     <Compile Include="Dataset\dsTAmodule.cs">
       <DependentUpon>dsTAmodule.xsd</DependentUpon>
@@ -253,6 +262,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PR1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PR6.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PR6.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report\TA001.cs">
@@ -426,6 +441,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PR1.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\PR6.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PR6.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\TA001.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TA001.cs</LastGenOutput>
@@ -512,6 +531,17 @@
     <None Include="Dataset\dsPAmodule.xss">
       <DependentUpon>dsPAmodule.xsd</DependentUpon>
     </None>
+    <None Include="Dataset\dsPaySlip.xsc">
+      <DependentUpon>dsPaySlip.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsPaySlip.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsPaySlip.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\dsPaySlip.xss">
+      <DependentUpon>dsPaySlip.xsd</DependentUpon>
+    </None>
     <None Include="Dataset\dsTAmodule.xsc">
       <DependentUpon>dsTAmodule.xsd</DependentUpon>
     </None>
@@ -538,7 +568,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>17712</DevelopmentServerPort>
+          <DevelopmentServerPort>27149</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>
