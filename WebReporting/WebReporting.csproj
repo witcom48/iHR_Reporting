@@ -150,6 +150,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsTAmodule.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\Tax91.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Tax91.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Default.aspx.cs">
       <DependentUpon>Default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -262,6 +267,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PR1.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PR2.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PR2.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report\PR6.cs">
@@ -441,6 +452,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PR1.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\PR2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PR2.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\PR6.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PR6.cs</LastGenOutput>
@@ -552,6 +567,17 @@
     </None>
     <None Include="Dataset\dsTAmodule.xss">
       <DependentUpon>dsTAmodule.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Tax91.xsc">
+      <DependentUpon>Tax91.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\Tax91.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Tax91.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Dataset\Tax91.xss">
+      <DependentUpon>Tax91.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
