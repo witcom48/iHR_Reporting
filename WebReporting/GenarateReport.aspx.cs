@@ -180,12 +180,21 @@ namespace WebReporting
                             viewerPA("PA018.rpt", objReportjob, objList_whose);
                             break;
 
+                        //NEW PR By KIM
                         case "PR1":
                             viewerPA("PR1.rpt", objReportjob, objList_whose);
                             break;
 
                         case "PR2":
                             viewerTax91("PR2.rpt", objReportjob, objList_whose);
+                            break;
+
+                        case "PR3":
+                            viewerPA("PR3.rpt", objReportjob, objList_whose);
+                            break;
+
+                        case "PR4":
+                            viewerPA("PR4.rpt", objReportjob, objList_whose);
                             break;
 
                         case "PR6":
