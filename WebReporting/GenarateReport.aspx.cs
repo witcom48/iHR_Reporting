@@ -101,6 +101,11 @@ namespace WebReporting
                             viewerTA("TA015.rpt", objReportjob, objList_whose);
                             break;
 
+                        //TA ADD NEW
+                        case "TA2":
+                            viewerTA("TA2.rpt", objReportjob, objList_whose);
+                            break;
+
 
 
                         //PA
