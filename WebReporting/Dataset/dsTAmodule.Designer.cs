@@ -32296,66 +32296,12 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(dsTAmodule dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._hRM_TR_TIMEDAYTYPETableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMEDAYTYPE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMEDAYTYPETableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_MT_REASONTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_REASON.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_REASONTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_MT_POSITIONTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_POSITION.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_POSITIONTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPSALARYTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPSALARY.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPSALARYTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_TIMEONSITETableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMEONSITE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMEONSITETableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYDGTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYDG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYDGTableAdapter.Update(updatedRows));
+                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -32368,6 +32314,15 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._hRM_TR_WAGEDAYTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_WAGEDAY.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_WAGEDAYTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._hRM_MT_REASON1TableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_REASON1.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -32377,12 +32332,57 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hRM_TR_WAGEDAYTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_WAGEDAY.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hRM_MT_REASONTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_REASON.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_WAGEDAYTableAdapter.Update(updatedRows));
+                    result = (result + this._hRM_MT_REASONTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_TIMEDAYTYPETableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMEDAYTYPE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMEDAYTYPETableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPSALARYTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPSALARY.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPSALARYTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_MT_POSITIONTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_POSITION.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_MT_POSITIONTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_TIMEONSITETableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMEONSITE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMEONSITETableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -32395,66 +32395,12 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hRM_MT_WORKERTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_TIMECARDTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMECARD.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMECARDTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_MT_SHIFTTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_SHIFT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_SHIFTTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_MT_INITIALTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
             if ((this._hRM_TR_EMPDEPTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPDEP.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
                     result = (result + this._hRM_TR_EMPDEPTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_TIMEOTTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMEOT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMEOTTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -32467,6 +32413,15 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._hRM_TR_TIMELEAVETableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMELEAVE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMELEAVETableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._hRM_MT_LEAVETableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_LEAVE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -32476,12 +32431,57 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hRM_TR_TIMELEAVETableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMELEAVE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hRM_TR_TIMECARDTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMECARD.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMELEAVETableAdapter.Update(updatedRows));
+                    result = (result + this._hRM_TR_TIMECARDTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_MT_WORKERTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_MT_SHIFTTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_SHIFT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_MT_SHIFTTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_MT_INITIALTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_TIMEOTTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_TIMEOT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMEOTTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYDGTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYDG.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYDGTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -32495,59 +32495,11 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(dsTAmodule dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._hRM_TR_TIMEDAYTYPETableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMEDAYTYPE.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMEDAYTYPETableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_MT_REASONTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_REASON.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_REASONTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_MT_POSITIONTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_POSITION.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_POSITIONTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPSALARYTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPSALARY.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPSALARYTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_TIMEONSITETableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMEONSITE.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMEONSITETableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYDGTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYDG.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYDGTableAdapter.Update(addedRows));
+                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -32559,6 +32511,14 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._hRM_TR_WAGEDAYTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_WAGEDAY.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_WAGEDAYTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._hRM_MT_REASON1TableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_REASON1.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -32567,11 +32527,51 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hRM_TR_WAGEDAYTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_WAGEDAY.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hRM_MT_REASONTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_REASON.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_WAGEDAYTableAdapter.Update(addedRows));
+                    result = (result + this._hRM_MT_REASONTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_TIMEDAYTYPETableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMEDAYTYPE.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMEDAYTYPETableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPSALARYTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPSALARY.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPSALARYTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_MT_POSITIONTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_POSITION.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_MT_POSITIONTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_TIMEONSITETableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMEONSITE.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMEONSITETableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -32583,59 +32583,11 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hRM_MT_WORKERTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_TIMECARDTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMECARD.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMECARDTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_MT_SHIFTTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_SHIFT.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_SHIFTTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_MT_INITIALTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
             if ((this._hRM_TR_EMPDEPTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPDEP.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
                     result = (result + this._hRM_TR_EMPDEPTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_TIMEOTTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMEOT.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMEOTTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -32647,6 +32599,14 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._hRM_TR_TIMELEAVETableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMELEAVE.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMELEAVETableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._hRM_MT_LEAVETableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_LEAVE.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -32655,11 +32615,51 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hRM_TR_TIMELEAVETableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMELEAVE.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hRM_TR_TIMECARDTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMECARD.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMELEAVETableAdapter.Update(addedRows));
+                    result = (result + this._hRM_TR_TIMECARDTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_MT_WORKERTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_MT_SHIFTTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_SHIFT.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_MT_SHIFTTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_MT_INITIALTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_TIMEOTTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_TIMEOT.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMEOTTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYDGTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYDG.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYDGTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -32673,27 +32673,11 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(dsTAmodule dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._hRM_TR_TIMELEAVETableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_TIMELEAVE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hRM_TR_PAYDGTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYDG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMELEAVETableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_LEAVETableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_LEAVE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_LEAVETableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_DEPTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_DEP.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_DEPTableAdapter.Update(deletedRows));
+                    result = (result + this._hRM_TR_PAYDGTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -32705,27 +32689,11 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hRM_TR_EMPDEPTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPDEP.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPDEPTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._hRM_MT_INITIALTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._hRM_MT_INITIALTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -32737,6 +32705,14 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
+            if ((this._hRM_MT_WORKERTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._hRM_TR_TIMECARDTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_TIMECARD.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
@@ -32745,11 +32721,35 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hRM_MT_WORKERTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hRM_MT_LEAVETableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_LEAVE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(deletedRows));
+                    result = (result + this._hRM_MT_LEAVETableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_TIMELEAVETableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_TIMELEAVE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMELEAVETableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_MT_DEPTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_DEP.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_MT_DEPTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPDEPTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPDEP.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPDEPTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -32761,51 +32761,11 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hRM_TR_WAGEDAYTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_WAGEDAY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_WAGEDAYTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_REASON1TableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_REASON1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_REASON1TableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_LOCATIONTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_LOCATION.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_LOCATIONTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYDGTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYDG.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYDGTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
             if ((this._hRM_TR_TIMEONSITETableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_TIMEONSITE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._hRM_TR_TIMEONSITETableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPSALARYTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPSALARY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPSALARYTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -32817,11 +32777,27 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
+            if ((this._hRM_TR_EMPSALARYTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPSALARY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPSALARYTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
                     result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_TIMEDAYTYPETableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_TIMEDAYTYPE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_TIMEDAYTYPETableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -32833,11 +32809,35 @@ namespace WebReporting.Dataset.dsTAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hRM_TR_TIMEDAYTYPETableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_TIMEDAYTYPE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hRM_MT_REASON1TableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_REASON1.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_TIMEDAYTYPETableAdapter.Update(deletedRows));
+                    result = (result + this._hRM_MT_REASON1TableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_WAGEDAYTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_WAGEDAY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_WAGEDAYTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_MT_LOCATIONTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_LOCATION.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_MT_LOCATIONTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }

@@ -18,6 +18,7 @@ namespace ClassLibrary_BPC.bpc.model
         public DateTime reportjob_todate { get; set; }
         public DateTime reportjob_paydate { get; set; }
         public string created_by { get; set; }
-        public DateTime created_date { get; set; }  
+        public DateTime created_date { get; set; }
+        public string reportjob_section { get; set; }
     }
 }

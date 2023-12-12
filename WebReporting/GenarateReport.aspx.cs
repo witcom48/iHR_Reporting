@@ -210,6 +210,10 @@ namespace WebReporting
                             viewerPaySlip("PR6.rpt", objReportjob, objList_whose);
                             break;
 
+                        case "PR7":
+                            viewerPaySlip("PR7.rpt", objReportjob, objList_whose);
+                            break;
+
                         default:
                             Response.Redirect("404.aspx?message=" + "Report Not Found");
                             break;
@@ -818,7 +822,7 @@ namespace WebReporting
                 if (rptName == "PA006.rpt"|| rptName == "PA008.rpt") 
                 {
                     param7Field.ParameterFieldName = "MMM";
-                    param7Range.Value = "1";
+                    param7Range.Value = obj.reportjob_section;
                     param7Field.CurrentValues.Add(param7Range);
                     paramFields.Add(param7Field);
                 } else { }
@@ -2007,6 +2011,7 @@ namespace WebReporting
 
                 //END dt
 
+                //export to pdf
                 //if (rptName == "PR2.rpt")
                 //{
                 //    strError = "RD.SetDataSource";

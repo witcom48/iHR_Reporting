@@ -1,6 +1,8 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebReporting", "WebReporting\WebReporting.csproj", "{3348E153-8221-47BF-9484-8BC4370E7BAF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibrary_BPC", "ClassLibrary_BPC\ClassLibrary_BPC.csproj", "{1806DB1F-952F-4185-9787-10FC0B6CF4BF}"
