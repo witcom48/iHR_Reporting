@@ -133,6 +133,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsEMPmodule.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Dataset\dsKT20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsKT20.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Dataset\dsPAmodule.cs">
       <DependentUpon>dsPAmodule.xsd</DependentUpon>
       <SubType>Component</SubType>
@@ -309,6 +314,18 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>PR7.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PR8.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PR8.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Report\PR9.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PR9.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Report\TA001.cs">
@@ -512,6 +529,14 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>PR7.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Report\PR8.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PR8.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\PR9.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>PR9.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report\TA001.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>TA001.cs</LastGenOutput>
@@ -590,6 +615,17 @@
     </None>
     <None Include="Dataset\dsEMPmodule.xss">
       <DependentUpon>dsEMPmodule.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsKT20.xsc">
+      <DependentUpon>dsKT20.xsd</DependentUpon>
+    </None>
+    <None Include="Dataset\dsKT20.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsKT20.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Dataset\dsKT20.xss">
+      <DependentUpon>dsKT20.xsd</DependentUpon>
     </None>
     <None Include="Dataset\dsPAmodule.xsc">
       <DependentUpon>dsPAmodule.xsd</DependentUpon>

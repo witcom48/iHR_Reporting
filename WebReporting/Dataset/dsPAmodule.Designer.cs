@@ -70,6 +70,10 @@ namespace WebReporting.Dataset {
         
         private HRM_TR_EMPPOSITIONDataTable tableHRM_TR_EMPPOSITION;
         
+        private HRM_TR_PAYREDUCEDataTable tableHRM_TR_PAYREDUCE;
+        
+        private HRM_TR_PAYTAXDETAILDataTable tableHRM_TR_PAYTAXDETAIL;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -166,6 +170,12 @@ namespace WebReporting.Dataset {
                 }
                 if ((ds.Tables["HRM_TR_EMPPOSITION"] != null)) {
                     base.Tables.Add(new HRM_TR_EMPPOSITIONDataTable(ds.Tables["HRM_TR_EMPPOSITION"]));
+                }
+                if ((ds.Tables["HRM_TR_PAYREDUCE"] != null)) {
+                    base.Tables.Add(new HRM_TR_PAYREDUCEDataTable(ds.Tables["HRM_TR_PAYREDUCE"]));
+                }
+                if ((ds.Tables["HRM_TR_PAYTAXDETAIL"] != null)) {
+                    base.Tables.Add(new HRM_TR_PAYTAXDETAILDataTable(ds.Tables["HRM_TR_PAYTAXDETAIL"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -417,6 +427,26 @@ namespace WebReporting.Dataset {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public HRM_TR_PAYREDUCEDataTable HRM_TR_PAYREDUCE {
+            get {
+                return this.tableHRM_TR_PAYREDUCE;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public HRM_TR_PAYTAXDETAILDataTable HRM_TR_PAYTAXDETAIL {
+            get {
+                return this.tableHRM_TR_PAYTAXDETAIL;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -550,6 +580,12 @@ namespace WebReporting.Dataset {
                 }
                 if ((ds.Tables["HRM_TR_EMPPOSITION"] != null)) {
                     base.Tables.Add(new HRM_TR_EMPPOSITIONDataTable(ds.Tables["HRM_TR_EMPPOSITION"]));
+                }
+                if ((ds.Tables["HRM_TR_PAYREDUCE"] != null)) {
+                    base.Tables.Add(new HRM_TR_PAYREDUCEDataTable(ds.Tables["HRM_TR_PAYREDUCE"]));
+                }
+                if ((ds.Tables["HRM_TR_PAYTAXDETAIL"] != null)) {
+                    base.Tables.Add(new HRM_TR_PAYTAXDETAILDataTable(ds.Tables["HRM_TR_PAYTAXDETAIL"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -722,6 +758,18 @@ namespace WebReporting.Dataset {
                     this.tableHRM_TR_EMPPOSITION.InitVars();
                 }
             }
+            this.tableHRM_TR_PAYREDUCE = ((HRM_TR_PAYREDUCEDataTable)(base.Tables["HRM_TR_PAYREDUCE"]));
+            if ((initTable == true)) {
+                if ((this.tableHRM_TR_PAYREDUCE != null)) {
+                    this.tableHRM_TR_PAYREDUCE.InitVars();
+                }
+            }
+            this.tableHRM_TR_PAYTAXDETAIL = ((HRM_TR_PAYTAXDETAILDataTable)(base.Tables["HRM_TR_PAYTAXDETAIL"]));
+            if ((initTable == true)) {
+                if ((this.tableHRM_TR_PAYTAXDETAIL != null)) {
+                    this.tableHRM_TR_PAYTAXDETAIL.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -778,6 +826,10 @@ namespace WebReporting.Dataset {
             base.Tables.Add(this.tableHRM_MT_POSITION);
             this.tableHRM_TR_EMPPOSITION = new HRM_TR_EMPPOSITIONDataTable();
             base.Tables.Add(this.tableHRM_TR_EMPPOSITION);
+            this.tableHRM_TR_PAYREDUCE = new HRM_TR_PAYREDUCEDataTable();
+            base.Tables.Add(this.tableHRM_TR_PAYREDUCE);
+            this.tableHRM_TR_PAYTAXDETAIL = new HRM_TR_PAYTAXDETAILDataTable();
+            base.Tables.Add(this.tableHRM_TR_PAYTAXDETAIL);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -920,6 +972,18 @@ namespace WebReporting.Dataset {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeHRM_TR_PAYREDUCE() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializeHRM_TR_PAYTAXDETAIL() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private void SchemaChanged(object sender, global::System.ComponentModel.CollectionChangeEventArgs e) {
             if ((e.Action == global::System.ComponentModel.CollectionChangeAction.Remove)) {
                 this.InitVars();
@@ -1041,6 +1105,12 @@ namespace WebReporting.Dataset {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void HRM_TR_EMPPOSITIONRowChangeEventHandler(object sender, HRM_TR_EMPPOSITIONRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void HRM_TR_PAYREDUCERowChangeEventHandler(object sender, HRM_TR_PAYREDUCERowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void HRM_TR_PAYTAXDETAILRowChangeEventHandler(object sender, HRM_TR_PAYTAXDETAILRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -11958,6 +12028,977 @@ namespace WebReporting.Dataset {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class HRM_TR_PAYREDUCEDataTable : global::System.Data.TypedTableBase<HRM_TR_PAYREDUCERow> {
+            
+            private global::System.Data.DataColumn columnCOMPANY_CODE;
+            
+            private global::System.Data.DataColumn columnWORKER_CODE;
+            
+            private global::System.Data.DataColumn columnPAYREDUCE_PAYDATE;
+            
+            private global::System.Data.DataColumn columnREDUCE_CODE;
+            
+            private global::System.Data.DataColumn columnPAYREDUCE_AMOUNT;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYREDUCEDataTable() {
+                this.TableName = "HRM_TR_PAYREDUCE";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal HRM_TR_PAYREDUCEDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected HRM_TR_PAYREDUCEDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn COMPANY_CODEColumn {
+                get {
+                    return this.columnCOMPANY_CODE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn WORKER_CODEColumn {
+                get {
+                    return this.columnWORKER_CODE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYREDUCE_PAYDATEColumn {
+                get {
+                    return this.columnPAYREDUCE_PAYDATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn REDUCE_CODEColumn {
+                get {
+                    return this.columnREDUCE_CODE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYREDUCE_AMOUNTColumn {
+                get {
+                    return this.columnPAYREDUCE_AMOUNT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYREDUCERow this[int index] {
+                get {
+                    return ((HRM_TR_PAYREDUCERow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event HRM_TR_PAYREDUCERowChangeEventHandler HRM_TR_PAYREDUCERowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event HRM_TR_PAYREDUCERowChangeEventHandler HRM_TR_PAYREDUCERowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event HRM_TR_PAYREDUCERowChangeEventHandler HRM_TR_PAYREDUCERowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event HRM_TR_PAYREDUCERowChangeEventHandler HRM_TR_PAYREDUCERowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddHRM_TR_PAYREDUCERow(HRM_TR_PAYREDUCERow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYREDUCERow AddHRM_TR_PAYREDUCERow(string COMPANY_CODE, string WORKER_CODE, System.DateTime PAYREDUCE_PAYDATE, string REDUCE_CODE, decimal PAYREDUCE_AMOUNT) {
+                HRM_TR_PAYREDUCERow rowHRM_TR_PAYREDUCERow = ((HRM_TR_PAYREDUCERow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        COMPANY_CODE,
+                        WORKER_CODE,
+                        PAYREDUCE_PAYDATE,
+                        REDUCE_CODE,
+                        PAYREDUCE_AMOUNT};
+                rowHRM_TR_PAYREDUCERow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowHRM_TR_PAYREDUCERow);
+                return rowHRM_TR_PAYREDUCERow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYREDUCERow FindByCOMPANY_CODEWORKER_CODEPAYREDUCE_PAYDATEREDUCE_CODE(string COMPANY_CODE, string WORKER_CODE, System.DateTime PAYREDUCE_PAYDATE, string REDUCE_CODE) {
+                return ((HRM_TR_PAYREDUCERow)(this.Rows.Find(new object[] {
+                            COMPANY_CODE,
+                            WORKER_CODE,
+                            PAYREDUCE_PAYDATE,
+                            REDUCE_CODE})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                HRM_TR_PAYREDUCEDataTable cln = ((HRM_TR_PAYREDUCEDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new HRM_TR_PAYREDUCEDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnCOMPANY_CODE = base.Columns["COMPANY_CODE"];
+                this.columnWORKER_CODE = base.Columns["WORKER_CODE"];
+                this.columnPAYREDUCE_PAYDATE = base.Columns["PAYREDUCE_PAYDATE"];
+                this.columnREDUCE_CODE = base.Columns["REDUCE_CODE"];
+                this.columnPAYREDUCE_AMOUNT = base.Columns["PAYREDUCE_AMOUNT"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnCOMPANY_CODE = new global::System.Data.DataColumn("COMPANY_CODE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCOMPANY_CODE);
+                this.columnWORKER_CODE = new global::System.Data.DataColumn("WORKER_CODE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWORKER_CODE);
+                this.columnPAYREDUCE_PAYDATE = new global::System.Data.DataColumn("PAYREDUCE_PAYDATE", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYREDUCE_PAYDATE);
+                this.columnREDUCE_CODE = new global::System.Data.DataColumn("REDUCE_CODE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnREDUCE_CODE);
+                this.columnPAYREDUCE_AMOUNT = new global::System.Data.DataColumn("PAYREDUCE_AMOUNT", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYREDUCE_AMOUNT);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCOMPANY_CODE,
+                                this.columnWORKER_CODE,
+                                this.columnPAYREDUCE_PAYDATE,
+                                this.columnREDUCE_CODE}, true));
+                this.columnCOMPANY_CODE.AllowDBNull = false;
+                this.columnCOMPANY_CODE.MaxLength = 5;
+                this.columnWORKER_CODE.AllowDBNull = false;
+                this.columnWORKER_CODE.MaxLength = 15;
+                this.columnPAYREDUCE_PAYDATE.AllowDBNull = false;
+                this.columnREDUCE_CODE.AllowDBNull = false;
+                this.columnREDUCE_CODE.MaxLength = 5;
+                this.columnPAYREDUCE_AMOUNT.AllowDBNull = false;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYREDUCERow NewHRM_TR_PAYREDUCERow() {
+                return ((HRM_TR_PAYREDUCERow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new HRM_TR_PAYREDUCERow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(HRM_TR_PAYREDUCERow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.HRM_TR_PAYREDUCERowChanged != null)) {
+                    this.HRM_TR_PAYREDUCERowChanged(this, new HRM_TR_PAYREDUCERowChangeEvent(((HRM_TR_PAYREDUCERow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.HRM_TR_PAYREDUCERowChanging != null)) {
+                    this.HRM_TR_PAYREDUCERowChanging(this, new HRM_TR_PAYREDUCERowChangeEvent(((HRM_TR_PAYREDUCERow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.HRM_TR_PAYREDUCERowDeleted != null)) {
+                    this.HRM_TR_PAYREDUCERowDeleted(this, new HRM_TR_PAYREDUCERowChangeEvent(((HRM_TR_PAYREDUCERow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.HRM_TR_PAYREDUCERowDeleting != null)) {
+                    this.HRM_TR_PAYREDUCERowDeleting(this, new HRM_TR_PAYREDUCERowChangeEvent(((HRM_TR_PAYREDUCERow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveHRM_TR_PAYREDUCERow(HRM_TR_PAYREDUCERow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsPAmodule ds = new dsPAmodule();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "HRM_TR_PAYREDUCEDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class HRM_TR_PAYTAXDETAILDataTable : global::System.Data.TypedTableBase<HRM_TR_PAYTAXDETAILRow> {
+            
+            private global::System.Data.DataColumn columnCOMPANY_CODE;
+            
+            private global::System.Data.DataColumn columnWORKER_CODE;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_PAYDATE;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_COUNT;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_INCOMEFIX;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_DEDUCTFIX;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_INCOMEVAR;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_DEDUCTVAR;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_INCOMEACC;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_DEDUCTACC;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_TAXACC;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_PF;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_PFACC;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_SSO;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_SSOACC;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_ESTIMATEDINCOME;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_EXPERTPF;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_EXPENSE;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_REDUCE;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_NETANNUAL;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_TAXANNUALFIX;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_TAXANNUALVAR;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_TAXFIX;
+            
+            private global::System.Data.DataColumn columnPAYTAXDETAIL_TAXVAR;
+            
+            private global::System.Data.DataColumn columnCREATED_BY;
+            
+            private global::System.Data.DataColumn columnCREATED_DATE;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYTAXDETAILDataTable() {
+                this.TableName = "HRM_TR_PAYTAXDETAIL";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal HRM_TR_PAYTAXDETAILDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected HRM_TR_PAYTAXDETAILDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn COMPANY_CODEColumn {
+                get {
+                    return this.columnCOMPANY_CODE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn WORKER_CODEColumn {
+                get {
+                    return this.columnWORKER_CODE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_PAYDATEColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_PAYDATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_COUNTColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_COUNT;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_INCOMEFIXColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_INCOMEFIX;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_DEDUCTFIXColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_DEDUCTFIX;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_INCOMEVARColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_INCOMEVAR;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_DEDUCTVARColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_DEDUCTVAR;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_INCOMEACCColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_INCOMEACC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_DEDUCTACCColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_DEDUCTACC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_TAXACCColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_TAXACC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_PFColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_PF;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_PFACCColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_PFACC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_SSOColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_SSO;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_SSOACCColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_SSOACC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_ESTIMATEDINCOMEColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_ESTIMATEDINCOME;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_EXPERTPFColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_EXPERTPF;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_EXPENSEColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_EXPENSE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_REDUCEColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_REDUCE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_NETANNUALColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_NETANNUAL;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_TAXANNUALFIXColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_TAXANNUALFIX;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_TAXANNUALVARColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_TAXANNUALVAR;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_TAXFIXColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_TAXFIX;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PAYTAXDETAIL_TAXVARColumn {
+                get {
+                    return this.columnPAYTAXDETAIL_TAXVAR;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CREATED_BYColumn {
+                get {
+                    return this.columnCREATED_BY;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CREATED_DATEColumn {
+                get {
+                    return this.columnCREATED_DATE;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYTAXDETAILRow this[int index] {
+                get {
+                    return ((HRM_TR_PAYTAXDETAILRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event HRM_TR_PAYTAXDETAILRowChangeEventHandler HRM_TR_PAYTAXDETAILRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event HRM_TR_PAYTAXDETAILRowChangeEventHandler HRM_TR_PAYTAXDETAILRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event HRM_TR_PAYTAXDETAILRowChangeEventHandler HRM_TR_PAYTAXDETAILRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event HRM_TR_PAYTAXDETAILRowChangeEventHandler HRM_TR_PAYTAXDETAILRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddHRM_TR_PAYTAXDETAILRow(HRM_TR_PAYTAXDETAILRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYTAXDETAILRow AddHRM_TR_PAYTAXDETAILRow(
+                        string COMPANY_CODE, 
+                        string WORKER_CODE, 
+                        System.DateTime PAYTAXDETAIL_PAYDATE, 
+                        int PAYTAXDETAIL_COUNT, 
+                        decimal PAYTAXDETAIL_INCOMEFIX, 
+                        decimal PAYTAXDETAIL_DEDUCTFIX, 
+                        decimal PAYTAXDETAIL_INCOMEVAR, 
+                        decimal PAYTAXDETAIL_DEDUCTVAR, 
+                        decimal PAYTAXDETAIL_INCOMEACC, 
+                        decimal PAYTAXDETAIL_DEDUCTACC, 
+                        decimal PAYTAXDETAIL_TAXACC, 
+                        decimal PAYTAXDETAIL_PF, 
+                        decimal PAYTAXDETAIL_PFACC, 
+                        decimal PAYTAXDETAIL_SSO, 
+                        decimal PAYTAXDETAIL_SSOACC, 
+                        decimal PAYTAXDETAIL_ESTIMATEDINCOME, 
+                        decimal PAYTAXDETAIL_EXPERTPF, 
+                        decimal PAYTAXDETAIL_EXPENSE, 
+                        decimal PAYTAXDETAIL_REDUCE, 
+                        decimal PAYTAXDETAIL_NETANNUAL, 
+                        decimal PAYTAXDETAIL_TAXANNUALFIX, 
+                        decimal PAYTAXDETAIL_TAXANNUALVAR, 
+                        decimal PAYTAXDETAIL_TAXFIX, 
+                        decimal PAYTAXDETAIL_TAXVAR, 
+                        string CREATED_BY, 
+                        System.DateTime CREATED_DATE) {
+                HRM_TR_PAYTAXDETAILRow rowHRM_TR_PAYTAXDETAILRow = ((HRM_TR_PAYTAXDETAILRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        COMPANY_CODE,
+                        WORKER_CODE,
+                        PAYTAXDETAIL_PAYDATE,
+                        PAYTAXDETAIL_COUNT,
+                        PAYTAXDETAIL_INCOMEFIX,
+                        PAYTAXDETAIL_DEDUCTFIX,
+                        PAYTAXDETAIL_INCOMEVAR,
+                        PAYTAXDETAIL_DEDUCTVAR,
+                        PAYTAXDETAIL_INCOMEACC,
+                        PAYTAXDETAIL_DEDUCTACC,
+                        PAYTAXDETAIL_TAXACC,
+                        PAYTAXDETAIL_PF,
+                        PAYTAXDETAIL_PFACC,
+                        PAYTAXDETAIL_SSO,
+                        PAYTAXDETAIL_SSOACC,
+                        PAYTAXDETAIL_ESTIMATEDINCOME,
+                        PAYTAXDETAIL_EXPERTPF,
+                        PAYTAXDETAIL_EXPENSE,
+                        PAYTAXDETAIL_REDUCE,
+                        PAYTAXDETAIL_NETANNUAL,
+                        PAYTAXDETAIL_TAXANNUALFIX,
+                        PAYTAXDETAIL_TAXANNUALVAR,
+                        PAYTAXDETAIL_TAXFIX,
+                        PAYTAXDETAIL_TAXVAR,
+                        CREATED_BY,
+                        CREATED_DATE};
+                rowHRM_TR_PAYTAXDETAILRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowHRM_TR_PAYTAXDETAILRow);
+                return rowHRM_TR_PAYTAXDETAILRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYTAXDETAILRow FindByCOMPANY_CODEWORKER_CODEPAYTAXDETAIL_PAYDATE(string COMPANY_CODE, string WORKER_CODE, System.DateTime PAYTAXDETAIL_PAYDATE) {
+                return ((HRM_TR_PAYTAXDETAILRow)(this.Rows.Find(new object[] {
+                            COMPANY_CODE,
+                            WORKER_CODE,
+                            PAYTAXDETAIL_PAYDATE})));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                HRM_TR_PAYTAXDETAILDataTable cln = ((HRM_TR_PAYTAXDETAILDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new HRM_TR_PAYTAXDETAILDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnCOMPANY_CODE = base.Columns["COMPANY_CODE"];
+                this.columnWORKER_CODE = base.Columns["WORKER_CODE"];
+                this.columnPAYTAXDETAIL_PAYDATE = base.Columns["PAYTAXDETAIL_PAYDATE"];
+                this.columnPAYTAXDETAIL_COUNT = base.Columns["PAYTAXDETAIL_COUNT"];
+                this.columnPAYTAXDETAIL_INCOMEFIX = base.Columns["PAYTAXDETAIL_INCOMEFIX"];
+                this.columnPAYTAXDETAIL_DEDUCTFIX = base.Columns["PAYTAXDETAIL_DEDUCTFIX"];
+                this.columnPAYTAXDETAIL_INCOMEVAR = base.Columns["PAYTAXDETAIL_INCOMEVAR"];
+                this.columnPAYTAXDETAIL_DEDUCTVAR = base.Columns["PAYTAXDETAIL_DEDUCTVAR"];
+                this.columnPAYTAXDETAIL_INCOMEACC = base.Columns["PAYTAXDETAIL_INCOMEACC"];
+                this.columnPAYTAXDETAIL_DEDUCTACC = base.Columns["PAYTAXDETAIL_DEDUCTACC"];
+                this.columnPAYTAXDETAIL_TAXACC = base.Columns["PAYTAXDETAIL_TAXACC"];
+                this.columnPAYTAXDETAIL_PF = base.Columns["PAYTAXDETAIL_PF"];
+                this.columnPAYTAXDETAIL_PFACC = base.Columns["PAYTAXDETAIL_PFACC"];
+                this.columnPAYTAXDETAIL_SSO = base.Columns["PAYTAXDETAIL_SSO"];
+                this.columnPAYTAXDETAIL_SSOACC = base.Columns["PAYTAXDETAIL_SSOACC"];
+                this.columnPAYTAXDETAIL_ESTIMATEDINCOME = base.Columns["PAYTAXDETAIL_ESTIMATEDINCOME"];
+                this.columnPAYTAXDETAIL_EXPERTPF = base.Columns["PAYTAXDETAIL_EXPERTPF"];
+                this.columnPAYTAXDETAIL_EXPENSE = base.Columns["PAYTAXDETAIL_EXPENSE"];
+                this.columnPAYTAXDETAIL_REDUCE = base.Columns["PAYTAXDETAIL_REDUCE"];
+                this.columnPAYTAXDETAIL_NETANNUAL = base.Columns["PAYTAXDETAIL_NETANNUAL"];
+                this.columnPAYTAXDETAIL_TAXANNUALFIX = base.Columns["PAYTAXDETAIL_TAXANNUALFIX"];
+                this.columnPAYTAXDETAIL_TAXANNUALVAR = base.Columns["PAYTAXDETAIL_TAXANNUALVAR"];
+                this.columnPAYTAXDETAIL_TAXFIX = base.Columns["PAYTAXDETAIL_TAXFIX"];
+                this.columnPAYTAXDETAIL_TAXVAR = base.Columns["PAYTAXDETAIL_TAXVAR"];
+                this.columnCREATED_BY = base.Columns["CREATED_BY"];
+                this.columnCREATED_DATE = base.Columns["CREATED_DATE"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnCOMPANY_CODE = new global::System.Data.DataColumn("COMPANY_CODE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCOMPANY_CODE);
+                this.columnWORKER_CODE = new global::System.Data.DataColumn("WORKER_CODE", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnWORKER_CODE);
+                this.columnPAYTAXDETAIL_PAYDATE = new global::System.Data.DataColumn("PAYTAXDETAIL_PAYDATE", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_PAYDATE);
+                this.columnPAYTAXDETAIL_COUNT = new global::System.Data.DataColumn("PAYTAXDETAIL_COUNT", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_COUNT);
+                this.columnPAYTAXDETAIL_INCOMEFIX = new global::System.Data.DataColumn("PAYTAXDETAIL_INCOMEFIX", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_INCOMEFIX);
+                this.columnPAYTAXDETAIL_DEDUCTFIX = new global::System.Data.DataColumn("PAYTAXDETAIL_DEDUCTFIX", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_DEDUCTFIX);
+                this.columnPAYTAXDETAIL_INCOMEVAR = new global::System.Data.DataColumn("PAYTAXDETAIL_INCOMEVAR", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_INCOMEVAR);
+                this.columnPAYTAXDETAIL_DEDUCTVAR = new global::System.Data.DataColumn("PAYTAXDETAIL_DEDUCTVAR", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_DEDUCTVAR);
+                this.columnPAYTAXDETAIL_INCOMEACC = new global::System.Data.DataColumn("PAYTAXDETAIL_INCOMEACC", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_INCOMEACC);
+                this.columnPAYTAXDETAIL_DEDUCTACC = new global::System.Data.DataColumn("PAYTAXDETAIL_DEDUCTACC", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_DEDUCTACC);
+                this.columnPAYTAXDETAIL_TAXACC = new global::System.Data.DataColumn("PAYTAXDETAIL_TAXACC", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_TAXACC);
+                this.columnPAYTAXDETAIL_PF = new global::System.Data.DataColumn("PAYTAXDETAIL_PF", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_PF);
+                this.columnPAYTAXDETAIL_PFACC = new global::System.Data.DataColumn("PAYTAXDETAIL_PFACC", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_PFACC);
+                this.columnPAYTAXDETAIL_SSO = new global::System.Data.DataColumn("PAYTAXDETAIL_SSO", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_SSO);
+                this.columnPAYTAXDETAIL_SSOACC = new global::System.Data.DataColumn("PAYTAXDETAIL_SSOACC", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_SSOACC);
+                this.columnPAYTAXDETAIL_ESTIMATEDINCOME = new global::System.Data.DataColumn("PAYTAXDETAIL_ESTIMATEDINCOME", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_ESTIMATEDINCOME);
+                this.columnPAYTAXDETAIL_EXPERTPF = new global::System.Data.DataColumn("PAYTAXDETAIL_EXPERTPF", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_EXPERTPF);
+                this.columnPAYTAXDETAIL_EXPENSE = new global::System.Data.DataColumn("PAYTAXDETAIL_EXPENSE", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_EXPENSE);
+                this.columnPAYTAXDETAIL_REDUCE = new global::System.Data.DataColumn("PAYTAXDETAIL_REDUCE", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_REDUCE);
+                this.columnPAYTAXDETAIL_NETANNUAL = new global::System.Data.DataColumn("PAYTAXDETAIL_NETANNUAL", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_NETANNUAL);
+                this.columnPAYTAXDETAIL_TAXANNUALFIX = new global::System.Data.DataColumn("PAYTAXDETAIL_TAXANNUALFIX", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_TAXANNUALFIX);
+                this.columnPAYTAXDETAIL_TAXANNUALVAR = new global::System.Data.DataColumn("PAYTAXDETAIL_TAXANNUALVAR", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_TAXANNUALVAR);
+                this.columnPAYTAXDETAIL_TAXFIX = new global::System.Data.DataColumn("PAYTAXDETAIL_TAXFIX", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_TAXFIX);
+                this.columnPAYTAXDETAIL_TAXVAR = new global::System.Data.DataColumn("PAYTAXDETAIL_TAXVAR", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPAYTAXDETAIL_TAXVAR);
+                this.columnCREATED_BY = new global::System.Data.DataColumn("CREATED_BY", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCREATED_BY);
+                this.columnCREATED_DATE = new global::System.Data.DataColumn("CREATED_DATE", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCREATED_DATE);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnCOMPANY_CODE,
+                                this.columnWORKER_CODE,
+                                this.columnPAYTAXDETAIL_PAYDATE}, true));
+                this.columnCOMPANY_CODE.AllowDBNull = false;
+                this.columnCOMPANY_CODE.MaxLength = 5;
+                this.columnWORKER_CODE.AllowDBNull = false;
+                this.columnWORKER_CODE.MaxLength = 15;
+                this.columnPAYTAXDETAIL_PAYDATE.AllowDBNull = false;
+                this.columnPAYTAXDETAIL_COUNT.AllowDBNull = false;
+                this.columnCREATED_BY.AllowDBNull = false;
+                this.columnCREATED_BY.MaxLength = 20;
+                this.columnCREATED_DATE.AllowDBNull = false;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYTAXDETAILRow NewHRM_TR_PAYTAXDETAILRow() {
+                return ((HRM_TR_PAYTAXDETAILRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new HRM_TR_PAYTAXDETAILRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(HRM_TR_PAYTAXDETAILRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.HRM_TR_PAYTAXDETAILRowChanged != null)) {
+                    this.HRM_TR_PAYTAXDETAILRowChanged(this, new HRM_TR_PAYTAXDETAILRowChangeEvent(((HRM_TR_PAYTAXDETAILRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.HRM_TR_PAYTAXDETAILRowChanging != null)) {
+                    this.HRM_TR_PAYTAXDETAILRowChanging(this, new HRM_TR_PAYTAXDETAILRowChangeEvent(((HRM_TR_PAYTAXDETAILRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.HRM_TR_PAYTAXDETAILRowDeleted != null)) {
+                    this.HRM_TR_PAYTAXDETAILRowDeleted(this, new HRM_TR_PAYTAXDETAILRowChangeEvent(((HRM_TR_PAYTAXDETAILRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.HRM_TR_PAYTAXDETAILRowDeleting != null)) {
+                    this.HRM_TR_PAYTAXDETAILRowDeleting(this, new HRM_TR_PAYTAXDETAILRowChangeEvent(((HRM_TR_PAYTAXDETAILRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemoveHRM_TR_PAYTAXDETAILRow(HRM_TR_PAYTAXDETAILRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsPAmodule ds = new dsPAmodule();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "HRM_TR_PAYTAXDETAILDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class HRM_MT_INITIALRow : global::System.Data.DataRow {
@@ -18093,6 +19134,736 @@ namespace WebReporting.Dataset {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class HRM_TR_PAYREDUCERow : global::System.Data.DataRow {
+            
+            private HRM_TR_PAYREDUCEDataTable tableHRM_TR_PAYREDUCE;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal HRM_TR_PAYREDUCERow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableHRM_TR_PAYREDUCE = ((HRM_TR_PAYREDUCEDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string COMPANY_CODE {
+                get {
+                    return ((string)(this[this.tableHRM_TR_PAYREDUCE.COMPANY_CODEColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYREDUCE.COMPANY_CODEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string WORKER_CODE {
+                get {
+                    return ((string)(this[this.tableHRM_TR_PAYREDUCE.WORKER_CODEColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYREDUCE.WORKER_CODEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime PAYREDUCE_PAYDATE {
+                get {
+                    return ((global::System.DateTime)(this[this.tableHRM_TR_PAYREDUCE.PAYREDUCE_PAYDATEColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYREDUCE.PAYREDUCE_PAYDATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string REDUCE_CODE {
+                get {
+                    return ((string)(this[this.tableHRM_TR_PAYREDUCE.REDUCE_CODEColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYREDUCE.REDUCE_CODEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYREDUCE_AMOUNT {
+                get {
+                    return ((decimal)(this[this.tableHRM_TR_PAYREDUCE.PAYREDUCE_AMOUNTColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYREDUCE.PAYREDUCE_AMOUNTColumn] = value;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class HRM_TR_PAYTAXDETAILRow : global::System.Data.DataRow {
+            
+            private HRM_TR_PAYTAXDETAILDataTable tableHRM_TR_PAYTAXDETAIL;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal HRM_TR_PAYTAXDETAILRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableHRM_TR_PAYTAXDETAIL = ((HRM_TR_PAYTAXDETAILDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string COMPANY_CODE {
+                get {
+                    return ((string)(this[this.tableHRM_TR_PAYTAXDETAIL.COMPANY_CODEColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.COMPANY_CODEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string WORKER_CODE {
+                get {
+                    return ((string)(this[this.tableHRM_TR_PAYTAXDETAIL.WORKER_CODEColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.WORKER_CODEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime PAYTAXDETAIL_PAYDATE {
+                get {
+                    return ((global::System.DateTime)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PAYDATEColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PAYDATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public int PAYTAXDETAIL_COUNT {
+                get {
+                    return ((int)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_COUNTColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_COUNTColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_INCOMEFIX {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEFIXColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_INCOMEFIX\' in table \'HRM_TR_PAYTAXDETAIL\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEFIXColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_DEDUCTFIX {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTFIXColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_DEDUCTFIX\' in table \'HRM_TR_PAYTAXDETAIL\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTFIXColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_INCOMEVAR {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEVARColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_INCOMEVAR\' in table \'HRM_TR_PAYTAXDETAIL\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEVARColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_DEDUCTVAR {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTVARColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_DEDUCTVAR\' in table \'HRM_TR_PAYTAXDETAIL\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTVARColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_INCOMEACC {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEACCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_INCOMEACC\' in table \'HRM_TR_PAYTAXDETAIL\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEACCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_DEDUCTACC {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTACCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_DEDUCTACC\' in table \'HRM_TR_PAYTAXDETAIL\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTACCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_TAXACC {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXACCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_TAXACC\' in table \'HRM_TR_PAYTAXDETAIL\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXACCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_PF {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PFColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_PF\' in table \'HRM_TR_PAYTAXDETAIL\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PFColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_PFACC {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PFACCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_PFACC\' in table \'HRM_TR_PAYTAXDETAIL\' is DBNul" +
+                                "l.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PFACCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_SSO {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_SSOColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_SSO\' in table \'HRM_TR_PAYTAXDETAIL\' is DBNull." +
+                                "", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_SSOColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_SSOACC {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_SSOACCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_SSOACC\' in table \'HRM_TR_PAYTAXDETAIL\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_SSOACCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_ESTIMATEDINCOME {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_ESTIMATEDINCOMEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_ESTIMATEDINCOME\' in table \'HRM_TR_PAYTAXDETAIL" +
+                                "\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_ESTIMATEDINCOMEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_EXPERTPF {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_EXPERTPFColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_EXPERTPF\' in table \'HRM_TR_PAYTAXDETAIL\' is DB" +
+                                "Null.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_EXPERTPFColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_EXPENSE {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_EXPENSEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_EXPENSE\' in table \'HRM_TR_PAYTAXDETAIL\' is DBN" +
+                                "ull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_EXPENSEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_REDUCE {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_REDUCEColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_REDUCE\' in table \'HRM_TR_PAYTAXDETAIL\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_REDUCEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_NETANNUAL {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_NETANNUALColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_NETANNUAL\' in table \'HRM_TR_PAYTAXDETAIL\' is D" +
+                                "BNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_NETANNUALColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_TAXANNUALFIX {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXANNUALFIXColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_TAXANNUALFIX\' in table \'HRM_TR_PAYTAXDETAIL\' i" +
+                                "s DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXANNUALFIXColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_TAXANNUALVAR {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXANNUALVARColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_TAXANNUALVAR\' in table \'HRM_TR_PAYTAXDETAIL\' i" +
+                                "s DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXANNUALVARColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_TAXFIX {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXFIXColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_TAXFIX\' in table \'HRM_TR_PAYTAXDETAIL\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXFIXColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal PAYTAXDETAIL_TAXVAR {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXVARColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PAYTAXDETAIL_TAXVAR\' in table \'HRM_TR_PAYTAXDETAIL\' is DBNu" +
+                                "ll.", e);
+                    }
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXVARColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CREATED_BY {
+                get {
+                    return ((string)(this[this.tableHRM_TR_PAYTAXDETAIL.CREATED_BYColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.CREATED_BYColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime CREATED_DATE {
+                get {
+                    return ((global::System.DateTime)(this[this.tableHRM_TR_PAYTAXDETAIL.CREATED_DATEColumn]));
+                }
+                set {
+                    this[this.tableHRM_TR_PAYTAXDETAIL.CREATED_DATEColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_INCOMEFIXNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEFIXColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_INCOMEFIXNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEFIXColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_DEDUCTFIXNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTFIXColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_DEDUCTFIXNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTFIXColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_INCOMEVARNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEVARColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_INCOMEVARNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEVARColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_DEDUCTVARNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTVARColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_DEDUCTVARNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTVARColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_INCOMEACCNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEACCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_INCOMEACCNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_INCOMEACCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_DEDUCTACCNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTACCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_DEDUCTACCNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_DEDUCTACCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_TAXACCNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXACCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_TAXACCNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXACCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_PFNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PFColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_PFNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PFColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_PFACCNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PFACCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_PFACCNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_PFACCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_SSONull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_SSOColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_SSONull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_SSOColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_SSOACCNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_SSOACCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_SSOACCNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_SSOACCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_ESTIMATEDINCOMENull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_ESTIMATEDINCOMEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_ESTIMATEDINCOMENull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_ESTIMATEDINCOMEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_EXPERTPFNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_EXPERTPFColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_EXPERTPFNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_EXPERTPFColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_EXPENSENull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_EXPENSEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_EXPENSENull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_EXPENSEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_REDUCENull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_REDUCEColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_REDUCENull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_REDUCEColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_NETANNUALNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_NETANNUALColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_NETANNUALNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_NETANNUALColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_TAXANNUALFIXNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXANNUALFIXColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_TAXANNUALFIXNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXANNUALFIXColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_TAXANNUALVARNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXANNUALVARColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_TAXANNUALVARNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXANNUALVARColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_TAXFIXNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXFIXColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_TAXFIXNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXFIXColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPAYTAXDETAIL_TAXVARNull() {
+                return this.IsNull(this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXVARColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPAYTAXDETAIL_TAXVARNull() {
+                this[this.tableHRM_TR_PAYTAXDETAIL.PAYTAXDETAIL_TAXVARColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -18860,6 +20631,74 @@ namespace WebReporting.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public HRM_TR_EMPPOSITIONRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class HRM_TR_PAYREDUCERowChangeEvent : global::System.EventArgs {
+            
+            private HRM_TR_PAYREDUCERow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYREDUCERowChangeEvent(HRM_TR_PAYREDUCERow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYREDUCERow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class HRM_TR_PAYTAXDETAILRowChangeEvent : global::System.EventArgs {
+            
+            private HRM_TR_PAYTAXDETAILRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYTAXDETAILRowChangeEvent(HRM_TR_PAYTAXDETAILRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public HRM_TR_PAYTAXDETAILRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -30762,6 +32601,1143 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
     }
     
     /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class HRM_TR_PAYREDUCETableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public HRM_TR_PAYREDUCETableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "HRM_TR_PAYREDUCE";
+            tableMapping.ColumnMappings.Add("COMPANY_CODE", "COMPANY_CODE");
+            tableMapping.ColumnMappings.Add("WORKER_CODE", "WORKER_CODE");
+            tableMapping.ColumnMappings.Add("PAYREDUCE_PAYDATE", "PAYREDUCE_PAYDATE");
+            tableMapping.ColumnMappings.Add("REDUCE_CODE", "REDUCE_CODE");
+            tableMapping.ColumnMappings.Add("PAYREDUCE_AMOUNT", "PAYREDUCE_AMOUNT");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[HRM_TR_PAYREDUCE] WHERE (([COMPANY_CODE] = @Original_COMPANY_C" +
+                "ODE) AND ([WORKER_CODE] = @Original_WORKER_CODE) AND ([PAYREDUCE_PAYDATE] = @Ori" +
+                "ginal_PAYREDUCE_PAYDATE) AND ([REDUCE_CODE] = @Original_REDUCE_CODE))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_COMPANY_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "COMPANY_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_WORKER_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WORKER_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PAYREDUCE_PAYDATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYREDUCE_PAYDATE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_REDUCE_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "REDUCE_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[HRM_TR_PAYREDUCE] ([COMPANY_CODE], [WORKER_CODE], [PAYREDUCE_P" +
+                "AYDATE], [REDUCE_CODE], [PAYREDUCE_AMOUNT]) VALUES (@COMPANY_CODE, @WORKER_CODE," +
+                " @PAYREDUCE_PAYDATE, @REDUCE_CODE, @PAYREDUCE_AMOUNT)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@COMPANY_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "COMPANY_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@WORKER_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WORKER_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYREDUCE_PAYDATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYREDUCE_PAYDATE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@REDUCE_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "REDUCE_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYREDUCE_AMOUNT", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYREDUCE_AMOUNT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[HRM_TR_PAYREDUCE] SET [COMPANY_CODE] = @COMPANY_CODE, [WORKER_CODE] = @WORKER_CODE, [PAYREDUCE_PAYDATE] = @PAYREDUCE_PAYDATE, [REDUCE_CODE] = @REDUCE_CODE, [PAYREDUCE_AMOUNT] = @PAYREDUCE_AMOUNT WHERE (([COMPANY_CODE] = @Original_COMPANY_CODE) AND ([WORKER_CODE] = @Original_WORKER_CODE) AND ([PAYREDUCE_PAYDATE] = @Original_PAYREDUCE_PAYDATE) AND ([REDUCE_CODE] = @Original_REDUCE_CODE))";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@COMPANY_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "COMPANY_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@WORKER_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WORKER_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYREDUCE_PAYDATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYREDUCE_PAYDATE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@REDUCE_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "REDUCE_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYREDUCE_AMOUNT", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYREDUCE_AMOUNT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_COMPANY_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "COMPANY_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_WORKER_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WORKER_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PAYREDUCE_PAYDATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYREDUCE_PAYDATE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_REDUCE_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "REDUCE_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["HRMConnectionString1"].ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = "SELECT COMPANY_CODE, WORKER_CODE, PAYREDUCE_PAYDATE, REDUCE_CODE, PAYREDUCE_AMOUN" +
+                "T FROM dbo.HRM_TR_PAYREDUCE";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(dsPAmodule.HRM_TR_PAYREDUCEDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual dsPAmodule.HRM_TR_PAYREDUCEDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            dsPAmodule.HRM_TR_PAYREDUCEDataTable dataTable = new dsPAmodule.HRM_TR_PAYREDUCEDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(dsPAmodule.HRM_TR_PAYREDUCEDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(dsPAmodule dataSet) {
+            return this.Adapter.Update(dataSet, "HRM_TR_PAYREDUCE");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(string Original_COMPANY_CODE, string Original_WORKER_CODE, System.DateTime Original_PAYREDUCE_PAYDATE, string Original_REDUCE_CODE) {
+            if ((Original_COMPANY_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_COMPANY_CODE");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_COMPANY_CODE));
+            }
+            if ((Original_WORKER_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_WORKER_CODE");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_WORKER_CODE));
+            }
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_PAYREDUCE_PAYDATE));
+            if ((Original_REDUCE_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_REDUCE_CODE");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((string)(Original_REDUCE_CODE));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string COMPANY_CODE, string WORKER_CODE, System.DateTime PAYREDUCE_PAYDATE, string REDUCE_CODE, decimal PAYREDUCE_AMOUNT) {
+            if ((COMPANY_CODE == null)) {
+                throw new global::System.ArgumentNullException("COMPANY_CODE");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(COMPANY_CODE));
+            }
+            if ((WORKER_CODE == null)) {
+                throw new global::System.ArgumentNullException("WORKER_CODE");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(WORKER_CODE));
+            }
+            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(PAYREDUCE_PAYDATE));
+            if ((REDUCE_CODE == null)) {
+                throw new global::System.ArgumentNullException("REDUCE_CODE");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(REDUCE_CODE));
+            }
+            this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(PAYREDUCE_AMOUNT));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string COMPANY_CODE, string WORKER_CODE, System.DateTime PAYREDUCE_PAYDATE, string REDUCE_CODE, decimal PAYREDUCE_AMOUNT, string Original_COMPANY_CODE, string Original_WORKER_CODE, System.DateTime Original_PAYREDUCE_PAYDATE, string Original_REDUCE_CODE) {
+            if ((COMPANY_CODE == null)) {
+                throw new global::System.ArgumentNullException("COMPANY_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(COMPANY_CODE));
+            }
+            if ((WORKER_CODE == null)) {
+                throw new global::System.ArgumentNullException("WORKER_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(WORKER_CODE));
+            }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(PAYREDUCE_PAYDATE));
+            if ((REDUCE_CODE == null)) {
+                throw new global::System.ArgumentNullException("REDUCE_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(REDUCE_CODE));
+            }
+            this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(PAYREDUCE_AMOUNT));
+            if ((Original_COMPANY_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_COMPANY_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_COMPANY_CODE));
+            }
+            if ((Original_WORKER_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_WORKER_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_WORKER_CODE));
+            }
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(Original_PAYREDUCE_PAYDATE));
+            if ((Original_REDUCE_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_REDUCE_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_REDUCE_CODE));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(decimal PAYREDUCE_AMOUNT, string Original_COMPANY_CODE, string Original_WORKER_CODE, System.DateTime Original_PAYREDUCE_PAYDATE, string Original_REDUCE_CODE) {
+            return this.Update(Original_COMPANY_CODE, Original_WORKER_CODE, Original_PAYREDUCE_PAYDATE, Original_REDUCE_CODE, PAYREDUCE_AMOUNT, Original_COMPANY_CODE, Original_WORKER_CODE, Original_PAYREDUCE_PAYDATE, Original_REDUCE_CODE);
+        }
+    }
+    
+    /// <summary>
+    ///Represents the connection and commands used to retrieve and save data.
+    ///</summary>
+    [global::System.ComponentModel.DesignerCategoryAttribute("code")]
+    [global::System.ComponentModel.ToolboxItem(true)]
+    [global::System.ComponentModel.DataObjectAttribute(true)]
+    [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
+        ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
+    [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+    public partial class HRM_TR_PAYTAXDETAILTableAdapter : global::System.ComponentModel.Component {
+        
+        private global::System.Data.SqlClient.SqlDataAdapter _adapter;
+        
+        private global::System.Data.SqlClient.SqlConnection _connection;
+        
+        private global::System.Data.SqlClient.SqlTransaction _transaction;
+        
+        private global::System.Data.SqlClient.SqlCommand[] _commandCollection;
+        
+        private bool _clearBeforeFill;
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public HRM_TR_PAYTAXDETAILTableAdapter() {
+            this.ClearBeforeFill = true;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected internal global::System.Data.SqlClient.SqlDataAdapter Adapter {
+            get {
+                if ((this._adapter == null)) {
+                    this.InitAdapter();
+                }
+                return this._adapter;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlConnection Connection {
+            get {
+                if ((this._connection == null)) {
+                    this.InitConnection();
+                }
+                return this._connection;
+            }
+            set {
+                this._connection = value;
+                if ((this.Adapter.InsertCommand != null)) {
+                    this.Adapter.InsertCommand.Connection = value;
+                }
+                if ((this.Adapter.DeleteCommand != null)) {
+                    this.Adapter.DeleteCommand.Connection = value;
+                }
+                if ((this.Adapter.UpdateCommand != null)) {
+                    this.Adapter.UpdateCommand.Connection = value;
+                }
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    if ((this.CommandCollection[i] != null)) {
+                        ((global::System.Data.SqlClient.SqlCommand)(this.CommandCollection[i])).Connection = value;
+                    }
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        internal global::System.Data.SqlClient.SqlTransaction Transaction {
+            get {
+                return this._transaction;
+            }
+            set {
+                this._transaction = value;
+                for (int i = 0; (i < this.CommandCollection.Length); i = (i + 1)) {
+                    this.CommandCollection[i].Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.DeleteCommand != null))) {
+                    this.Adapter.DeleteCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.InsertCommand != null))) {
+                    this.Adapter.InsertCommand.Transaction = this._transaction;
+                }
+                if (((this.Adapter != null) 
+                            && (this.Adapter.UpdateCommand != null))) {
+                    this.Adapter.UpdateCommand.Transaction = this._transaction;
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        protected global::System.Data.SqlClient.SqlCommand[] CommandCollection {
+            get {
+                if ((this._commandCollection == null)) {
+                    this.InitCommandCollection();
+                }
+                return this._commandCollection;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public bool ClearBeforeFill {
+            get {
+                return this._clearBeforeFill;
+            }
+            set {
+                this._clearBeforeFill = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitAdapter() {
+            this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
+            global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
+            tableMapping.SourceTable = "Table";
+            tableMapping.DataSetTable = "HRM_TR_PAYTAXDETAIL";
+            tableMapping.ColumnMappings.Add("COMPANY_CODE", "COMPANY_CODE");
+            tableMapping.ColumnMappings.Add("WORKER_CODE", "WORKER_CODE");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_PAYDATE", "PAYTAXDETAIL_PAYDATE");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_COUNT", "PAYTAXDETAIL_COUNT");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_INCOMEFIX", "PAYTAXDETAIL_INCOMEFIX");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_DEDUCTFIX", "PAYTAXDETAIL_DEDUCTFIX");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_INCOMEVAR", "PAYTAXDETAIL_INCOMEVAR");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_DEDUCTVAR", "PAYTAXDETAIL_DEDUCTVAR");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_INCOMEACC", "PAYTAXDETAIL_INCOMEACC");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_DEDUCTACC", "PAYTAXDETAIL_DEDUCTACC");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_TAXACC", "PAYTAXDETAIL_TAXACC");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_PF", "PAYTAXDETAIL_PF");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_PFACC", "PAYTAXDETAIL_PFACC");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_SSO", "PAYTAXDETAIL_SSO");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_SSOACC", "PAYTAXDETAIL_SSOACC");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_ESTIMATEDINCOME", "PAYTAXDETAIL_ESTIMATEDINCOME");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_EXPERTPF", "PAYTAXDETAIL_EXPERTPF");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_EXPENSE", "PAYTAXDETAIL_EXPENSE");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_REDUCE", "PAYTAXDETAIL_REDUCE");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_NETANNUAL", "PAYTAXDETAIL_NETANNUAL");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_TAXANNUALFIX", "PAYTAXDETAIL_TAXANNUALFIX");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_TAXANNUALVAR", "PAYTAXDETAIL_TAXANNUALVAR");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_TAXFIX", "PAYTAXDETAIL_TAXFIX");
+            tableMapping.ColumnMappings.Add("PAYTAXDETAIL_TAXVAR", "PAYTAXDETAIL_TAXVAR");
+            tableMapping.ColumnMappings.Add("CREATED_BY", "CREATED_BY");
+            tableMapping.ColumnMappings.Add("CREATED_DATE", "CREATED_DATE");
+            this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM [dbo].[HRM_TR_PAYTAXDETAIL] WHERE (([COMPANY_CODE] = @Original_COMPAN" +
+                "Y_CODE) AND ([WORKER_CODE] = @Original_WORKER_CODE) AND ([PAYTAXDETAIL_PAYDATE] " +
+                "= @Original_PAYTAXDETAIL_PAYDATE))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_COMPANY_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "COMPANY_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_WORKER_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WORKER_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PAYTAXDETAIL_PAYDATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYTAXDETAIL_PAYDATE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[HRM_TR_PAYTAXDETAIL] ([COMPANY_CODE], [WORKER_CODE], [PAYTAXDETAIL_PAYDATE], [PAYTAXDETAIL_COUNT], [PAYTAXDETAIL_INCOMEFIX], [PAYTAXDETAIL_DEDUCTFIX], [PAYTAXDETAIL_INCOMEVAR], [PAYTAXDETAIL_DEDUCTVAR], [PAYTAXDETAIL_INCOMEACC], [PAYTAXDETAIL_DEDUCTACC], [PAYTAXDETAIL_TAXACC], [PAYTAXDETAIL_PF], [PAYTAXDETAIL_PFACC], [PAYTAXDETAIL_SSO], [PAYTAXDETAIL_SSOACC], [PAYTAXDETAIL_ESTIMATEDINCOME], [PAYTAXDETAIL_EXPERTPF], [PAYTAXDETAIL_EXPENSE], [PAYTAXDETAIL_REDUCE], [PAYTAXDETAIL_NETANNUAL], [PAYTAXDETAIL_TAXANNUALFIX], [PAYTAXDETAIL_TAXANNUALVAR], [PAYTAXDETAIL_TAXFIX], [PAYTAXDETAIL_TAXVAR], [CREATED_BY], [CREATED_DATE]) VALUES (@COMPANY_CODE, @WORKER_CODE, @PAYTAXDETAIL_PAYDATE, @PAYTAXDETAIL_COUNT, @PAYTAXDETAIL_INCOMEFIX, @PAYTAXDETAIL_DEDUCTFIX, @PAYTAXDETAIL_INCOMEVAR, @PAYTAXDETAIL_DEDUCTVAR, @PAYTAXDETAIL_INCOMEACC, @PAYTAXDETAIL_DEDUCTACC, @PAYTAXDETAIL_TAXACC, @PAYTAXDETAIL_PF, @PAYTAXDETAIL_PFACC, @PAYTAXDETAIL_SSO, @PAYTAXDETAIL_SSOACC, @PAYTAXDETAIL_ESTIMATEDINCOME, @PAYTAXDETAIL_EXPERTPF, @PAYTAXDETAIL_EXPENSE, @PAYTAXDETAIL_REDUCE, @PAYTAXDETAIL_NETANNUAL, @PAYTAXDETAIL_TAXANNUALFIX, @PAYTAXDETAIL_TAXANNUALVAR, @PAYTAXDETAIL_TAXFIX, @PAYTAXDETAIL_TAXVAR, @CREATED_BY, @CREATED_DATE)";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@COMPANY_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "COMPANY_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@WORKER_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WORKER_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_PAYDATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYTAXDETAIL_PAYDATE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_COUNT", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYTAXDETAIL_COUNT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_INCOMEFIX", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_INCOMEFIX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_DEDUCTFIX", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_DEDUCTFIX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_INCOMEVAR", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_INCOMEVAR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_DEDUCTVAR", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_DEDUCTVAR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_INCOMEACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_INCOMEACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_DEDUCTACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_DEDUCTACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_TAXACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_PF", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_PF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_PFACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_PFACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_SSO", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_SSO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_SSOACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_SSOACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_ESTIMATEDINCOME", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_ESTIMATEDINCOME", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_EXPERTPF", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_EXPERTPF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_EXPENSE", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_EXPENSE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_REDUCE", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_REDUCE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_NETANNUAL", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_NETANNUAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXANNUALFIX", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_TAXANNUALFIX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXANNUALVAR", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_TAXANNUALVAR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXFIX", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_TAXFIX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXVAR", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_TAXVAR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CREATED_BY", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CREATED_BY", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CREATED_DATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CREATED_DATE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[HRM_TR_PAYTAXDETAIL] SET [COMPANY_CODE] = @COMPANY_CODE, [WORKER_CODE] = @WORKER_CODE, [PAYTAXDETAIL_PAYDATE] = @PAYTAXDETAIL_PAYDATE, [PAYTAXDETAIL_COUNT] = @PAYTAXDETAIL_COUNT, [PAYTAXDETAIL_INCOMEFIX] = @PAYTAXDETAIL_INCOMEFIX, [PAYTAXDETAIL_DEDUCTFIX] = @PAYTAXDETAIL_DEDUCTFIX, [PAYTAXDETAIL_INCOMEVAR] = @PAYTAXDETAIL_INCOMEVAR, [PAYTAXDETAIL_DEDUCTVAR] = @PAYTAXDETAIL_DEDUCTVAR, [PAYTAXDETAIL_INCOMEACC] = @PAYTAXDETAIL_INCOMEACC, [PAYTAXDETAIL_DEDUCTACC] = @PAYTAXDETAIL_DEDUCTACC, [PAYTAXDETAIL_TAXACC] = @PAYTAXDETAIL_TAXACC, [PAYTAXDETAIL_PF] = @PAYTAXDETAIL_PF, [PAYTAXDETAIL_PFACC] = @PAYTAXDETAIL_PFACC, [PAYTAXDETAIL_SSO] = @PAYTAXDETAIL_SSO, [PAYTAXDETAIL_SSOACC] = @PAYTAXDETAIL_SSOACC, [PAYTAXDETAIL_ESTIMATEDINCOME] = @PAYTAXDETAIL_ESTIMATEDINCOME, [PAYTAXDETAIL_EXPERTPF] = @PAYTAXDETAIL_EXPERTPF, [PAYTAXDETAIL_EXPENSE] = @PAYTAXDETAIL_EXPENSE, [PAYTAXDETAIL_REDUCE] = @PAYTAXDETAIL_REDUCE, [PAYTAXDETAIL_NETANNUAL] = @PAYTAXDETAIL_NETANNUAL, [PAYTAXDETAIL_TAXANNUALFIX] = @PAYTAXDETAIL_TAXANNUALFIX, [PAYTAXDETAIL_TAXANNUALVAR] = @PAYTAXDETAIL_TAXANNUALVAR, [PAYTAXDETAIL_TAXFIX] = @PAYTAXDETAIL_TAXFIX, [PAYTAXDETAIL_TAXVAR] = @PAYTAXDETAIL_TAXVAR, [CREATED_BY] = @CREATED_BY, [CREATED_DATE] = @CREATED_DATE WHERE (([COMPANY_CODE] = @Original_COMPANY_CODE) AND ([WORKER_CODE] = @Original_WORKER_CODE) AND ([PAYTAXDETAIL_PAYDATE] = @Original_PAYTAXDETAIL_PAYDATE))";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@COMPANY_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "COMPANY_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@WORKER_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WORKER_CODE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_PAYDATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYTAXDETAIL_PAYDATE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_COUNT", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYTAXDETAIL_COUNT", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_INCOMEFIX", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_INCOMEFIX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_DEDUCTFIX", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_DEDUCTFIX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_INCOMEVAR", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_INCOMEVAR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_DEDUCTVAR", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_DEDUCTVAR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_INCOMEACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_INCOMEACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_DEDUCTACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_DEDUCTACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_TAXACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_PF", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_PF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_PFACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_PFACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_SSO", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_SSO", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_SSOACC", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_SSOACC", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_ESTIMATEDINCOME", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_ESTIMATEDINCOME", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_EXPERTPF", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_EXPERTPF", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_EXPENSE", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_EXPENSE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_REDUCE", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_REDUCE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_NETANNUAL", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 12, 2, "PAYTAXDETAIL_NETANNUAL", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXANNUALFIX", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_TAXANNUALFIX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXANNUALVAR", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_TAXANNUALVAR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXFIX", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_TAXFIX", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@PAYTAXDETAIL_TAXVAR", global::System.Data.SqlDbType.Decimal, 0, global::System.Data.ParameterDirection.Input, 10, 2, "PAYTAXDETAIL_TAXVAR", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CREATED_BY", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CREATED_BY", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CREATED_DATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CREATED_DATE", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_COMPANY_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "COMPANY_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_WORKER_CODE", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "WORKER_CODE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_PAYTAXDETAIL_PAYDATE", global::System.Data.SqlDbType.DateTime, 0, global::System.Data.ParameterDirection.Input, 0, 0, "PAYTAXDETAIL_PAYDATE", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitConnection() {
+            this._connection = new global::System.Data.SqlClient.SqlConnection();
+            this._connection.ConnectionString = System.Configuration.ConfigurationManager.ConnectionStrings["HRMConnectionString1"].ConnectionString;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private void InitCommandCollection() {
+            this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
+            this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
+            this._commandCollection[0].Connection = this.Connection;
+            this._commandCollection[0].CommandText = @"SELECT COMPANY_CODE, WORKER_CODE, PAYTAXDETAIL_PAYDATE, PAYTAXDETAIL_COUNT, PAYTAXDETAIL_INCOMEFIX, PAYTAXDETAIL_DEDUCTFIX, PAYTAXDETAIL_INCOMEVAR, PAYTAXDETAIL_DEDUCTVAR, PAYTAXDETAIL_INCOMEACC, PAYTAXDETAIL_DEDUCTACC, PAYTAXDETAIL_TAXACC, PAYTAXDETAIL_PF, PAYTAXDETAIL_PFACC, PAYTAXDETAIL_SSO, PAYTAXDETAIL_SSOACC, PAYTAXDETAIL_ESTIMATEDINCOME, PAYTAXDETAIL_EXPERTPF, PAYTAXDETAIL_EXPENSE, PAYTAXDETAIL_REDUCE, PAYTAXDETAIL_NETANNUAL, PAYTAXDETAIL_TAXANNUALFIX, PAYTAXDETAIL_TAXANNUALVAR, PAYTAXDETAIL_TAXFIX, PAYTAXDETAIL_TAXVAR, CREATED_BY, CREATED_DATE FROM dbo.HRM_TR_PAYTAXDETAIL";
+            this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
+        public virtual int Fill(dsPAmodule.HRM_TR_PAYTAXDETAILDataTable dataTable) {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            if ((this.ClearBeforeFill == true)) {
+                dataTable.Clear();
+            }
+            int returnValue = this.Adapter.Fill(dataTable);
+            return returnValue;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
+        public virtual dsPAmodule.HRM_TR_PAYTAXDETAILDataTable GetData() {
+            this.Adapter.SelectCommand = this.CommandCollection[0];
+            dsPAmodule.HRM_TR_PAYTAXDETAILDataTable dataTable = new dsPAmodule.HRM_TR_PAYTAXDETAILDataTable();
+            this.Adapter.Fill(dataTable);
+            return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(dsPAmodule.HRM_TR_PAYTAXDETAILDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(dsPAmodule dataSet) {
+            return this.Adapter.Update(dataSet, "HRM_TR_PAYTAXDETAIL");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(string Original_COMPANY_CODE, string Original_WORKER_CODE, System.DateTime Original_PAYTAXDETAIL_PAYDATE) {
+            if ((Original_COMPANY_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_COMPANY_CODE");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[0].Value = ((string)(Original_COMPANY_CODE));
+            }
+            if ((Original_WORKER_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_WORKER_CODE");
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((string)(Original_WORKER_CODE));
+            }
+            this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_PAYTAXDETAIL_PAYDATE));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(
+                    string COMPANY_CODE, 
+                    string WORKER_CODE, 
+                    System.DateTime PAYTAXDETAIL_PAYDATE, 
+                    int PAYTAXDETAIL_COUNT, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_INCOMEFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_DEDUCTFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_INCOMEVAR, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_DEDUCTVAR, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_INCOMEACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_DEDUCTACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_PF, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_PFACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_SSO, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_SSOACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_ESTIMATEDINCOME, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_EXPERTPF, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_EXPENSE, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_REDUCE, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_NETANNUAL, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXANNUALFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXANNUALVAR, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXVAR, 
+                    string CREATED_BY, 
+                    System.DateTime CREATED_DATE) {
+            if ((COMPANY_CODE == null)) {
+                throw new global::System.ArgumentNullException("COMPANY_CODE");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(COMPANY_CODE));
+            }
+            if ((WORKER_CODE == null)) {
+                throw new global::System.ArgumentNullException("WORKER_CODE");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(WORKER_CODE));
+            }
+            this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(PAYTAXDETAIL_PAYDATE));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((int)(PAYTAXDETAIL_COUNT));
+            if ((PAYTAXDETAIL_INCOMEFIX.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(PAYTAXDETAIL_INCOMEFIX.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_DEDUCTFIX.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((decimal)(PAYTAXDETAIL_DEDUCTFIX.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_INCOMEVAR.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((decimal)(PAYTAXDETAIL_INCOMEVAR.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_DEDUCTVAR.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[7].Value = ((decimal)(PAYTAXDETAIL_DEDUCTVAR.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_INCOMEACC.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[8].Value = ((decimal)(PAYTAXDETAIL_INCOMEACC.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_DEDUCTACC.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[9].Value = ((decimal)(PAYTAXDETAIL_DEDUCTACC.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXACC.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[10].Value = ((decimal)(PAYTAXDETAIL_TAXACC.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_PF.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[11].Value = ((decimal)(PAYTAXDETAIL_PF.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_PFACC.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[12].Value = ((decimal)(PAYTAXDETAIL_PFACC.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_SSO.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[13].Value = ((decimal)(PAYTAXDETAIL_SSO.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_SSOACC.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[14].Value = ((decimal)(PAYTAXDETAIL_SSOACC.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_ESTIMATEDINCOME.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[15].Value = ((decimal)(PAYTAXDETAIL_ESTIMATEDINCOME.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_EXPERTPF.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[16].Value = ((decimal)(PAYTAXDETAIL_EXPERTPF.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_EXPENSE.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[17].Value = ((decimal)(PAYTAXDETAIL_EXPENSE.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_REDUCE.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[18].Value = ((decimal)(PAYTAXDETAIL_REDUCE.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_NETANNUAL.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[19].Value = ((decimal)(PAYTAXDETAIL_NETANNUAL.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXANNUALFIX.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[20].Value = ((decimal)(PAYTAXDETAIL_TAXANNUALFIX.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXANNUALVAR.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[21].Value = ((decimal)(PAYTAXDETAIL_TAXANNUALVAR.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXFIX.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[22].Value = ((decimal)(PAYTAXDETAIL_TAXFIX.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXVAR.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[23].Value = ((decimal)(PAYTAXDETAIL_TAXVAR.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            if ((CREATED_BY == null)) {
+                throw new global::System.ArgumentNullException("CREATED_BY");
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[24].Value = ((string)(CREATED_BY));
+            }
+            this.Adapter.InsertCommand.Parameters[25].Value = ((System.DateTime)(CREATED_DATE));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    string COMPANY_CODE, 
+                    string WORKER_CODE, 
+                    System.DateTime PAYTAXDETAIL_PAYDATE, 
+                    int PAYTAXDETAIL_COUNT, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_INCOMEFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_DEDUCTFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_INCOMEVAR, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_DEDUCTVAR, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_INCOMEACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_DEDUCTACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_PF, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_PFACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_SSO, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_SSOACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_ESTIMATEDINCOME, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_EXPERTPF, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_EXPENSE, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_REDUCE, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_NETANNUAL, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXANNUALFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXANNUALVAR, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXVAR, 
+                    string CREATED_BY, 
+                    System.DateTime CREATED_DATE, 
+                    string Original_COMPANY_CODE, 
+                    string Original_WORKER_CODE, 
+                    System.DateTime Original_PAYTAXDETAIL_PAYDATE) {
+            if ((COMPANY_CODE == null)) {
+                throw new global::System.ArgumentNullException("COMPANY_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(COMPANY_CODE));
+            }
+            if ((WORKER_CODE == null)) {
+                throw new global::System.ArgumentNullException("WORKER_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(WORKER_CODE));
+            }
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(PAYTAXDETAIL_PAYDATE));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(PAYTAXDETAIL_COUNT));
+            if ((PAYTAXDETAIL_INCOMEFIX.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(PAYTAXDETAIL_INCOMEFIX.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_DEDUCTFIX.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((decimal)(PAYTAXDETAIL_DEDUCTFIX.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_INCOMEVAR.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((decimal)(PAYTAXDETAIL_INCOMEVAR.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_DEDUCTVAR.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[7].Value = ((decimal)(PAYTAXDETAIL_DEDUCTVAR.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_INCOMEACC.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((decimal)(PAYTAXDETAIL_INCOMEACC.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_DEDUCTACC.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((decimal)(PAYTAXDETAIL_DEDUCTACC.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXACC.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(PAYTAXDETAIL_TAXACC.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_PF.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((decimal)(PAYTAXDETAIL_PF.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_PFACC.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((decimal)(PAYTAXDETAIL_PFACC.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_SSO.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((decimal)(PAYTAXDETAIL_SSO.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_SSOACC.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((decimal)(PAYTAXDETAIL_SSOACC.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_ESTIMATEDINCOME.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((decimal)(PAYTAXDETAIL_ESTIMATEDINCOME.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_EXPERTPF.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((decimal)(PAYTAXDETAIL_EXPERTPF.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_EXPENSE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((decimal)(PAYTAXDETAIL_EXPENSE.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_REDUCE.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((decimal)(PAYTAXDETAIL_REDUCE.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_NETANNUAL.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((decimal)(PAYTAXDETAIL_NETANNUAL.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXANNUALFIX.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((decimal)(PAYTAXDETAIL_TAXANNUALFIX.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXANNUALVAR.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((decimal)(PAYTAXDETAIL_TAXANNUALVAR.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXFIX.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[22].Value = ((decimal)(PAYTAXDETAIL_TAXFIX.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
+            }
+            if ((PAYTAXDETAIL_TAXVAR.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[23].Value = ((decimal)(PAYTAXDETAIL_TAXVAR.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[23].Value = global::System.DBNull.Value;
+            }
+            if ((CREATED_BY == null)) {
+                throw new global::System.ArgumentNullException("CREATED_BY");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((string)(CREATED_BY));
+            }
+            this.Adapter.UpdateCommand.Parameters[25].Value = ((System.DateTime)(CREATED_DATE));
+            if ((Original_COMPANY_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_COMPANY_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[26].Value = ((string)(Original_COMPANY_CODE));
+            }
+            if ((Original_WORKER_CODE == null)) {
+                throw new global::System.ArgumentNullException("Original_WORKER_CODE");
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[27].Value = ((string)(Original_WORKER_CODE));
+            }
+            this.Adapter.UpdateCommand.Parameters[28].Value = ((System.DateTime)(Original_PAYTAXDETAIL_PAYDATE));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    int PAYTAXDETAIL_COUNT, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_INCOMEFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_DEDUCTFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_INCOMEVAR, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_DEDUCTVAR, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_INCOMEACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_DEDUCTACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_PF, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_PFACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_SSO, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_SSOACC, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_ESTIMATEDINCOME, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_EXPERTPF, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_EXPENSE, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_REDUCE, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_NETANNUAL, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXANNUALFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXANNUALVAR, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXFIX, 
+                    global::System.Nullable<decimal> PAYTAXDETAIL_TAXVAR, 
+                    string CREATED_BY, 
+                    System.DateTime CREATED_DATE, 
+                    string Original_COMPANY_CODE, 
+                    string Original_WORKER_CODE, 
+                    System.DateTime Original_PAYTAXDETAIL_PAYDATE) {
+            return this.Update(Original_COMPANY_CODE, Original_WORKER_CODE, Original_PAYTAXDETAIL_PAYDATE, PAYTAXDETAIL_COUNT, PAYTAXDETAIL_INCOMEFIX, PAYTAXDETAIL_DEDUCTFIX, PAYTAXDETAIL_INCOMEVAR, PAYTAXDETAIL_DEDUCTVAR, PAYTAXDETAIL_INCOMEACC, PAYTAXDETAIL_DEDUCTACC, PAYTAXDETAIL_TAXACC, PAYTAXDETAIL_PF, PAYTAXDETAIL_PFACC, PAYTAXDETAIL_SSO, PAYTAXDETAIL_SSOACC, PAYTAXDETAIL_ESTIMATEDINCOME, PAYTAXDETAIL_EXPERTPF, PAYTAXDETAIL_EXPENSE, PAYTAXDETAIL_REDUCE, PAYTAXDETAIL_NETANNUAL, PAYTAXDETAIL_TAXANNUALFIX, PAYTAXDETAIL_TAXANNUALVAR, PAYTAXDETAIL_TAXFIX, PAYTAXDETAIL_TAXVAR, CREATED_BY, CREATED_DATE, Original_COMPANY_CODE, Original_WORKER_CODE, Original_PAYTAXDETAIL_PAYDATE);
+        }
+    }
+    
+    /// <summary>
     ///TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
     ///</summary>
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -30818,6 +33794,10 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
         private HRM_MT_POSITIONTableAdapter _hRM_MT_POSITIONTableAdapter;
         
         private HRM_TR_EMPPOSITIONTableAdapter _hRM_TR_EMPPOSITIONTableAdapter;
+        
+        private HRM_TR_PAYREDUCETableAdapter _hRM_TR_PAYREDUCETableAdapter;
+        
+        private HRM_TR_PAYTAXDETAILTableAdapter _hRM_TR_PAYTAXDETAILTableAdapter;
         
         private bool _backupDataSetBeforeUpdate;
         
@@ -31158,6 +34138,34 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public HRM_TR_PAYREDUCETableAdapter HRM_TR_PAYREDUCETableAdapter {
+            get {
+                return this._hRM_TR_PAYREDUCETableAdapter;
+            }
+            set {
+                this._hRM_TR_PAYREDUCETableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public HRM_TR_PAYTAXDETAILTableAdapter HRM_TR_PAYTAXDETAILTableAdapter {
+            get {
+                return this._hRM_TR_PAYTAXDETAILTableAdapter;
+            }
+            set {
+                this._hRM_TR_PAYTAXDETAILTableAdapter = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public bool BackupDataSetBeforeUpdate {
             get {
                 return this._backupDataSetBeforeUpdate;
@@ -31267,6 +34275,14 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                             && (this._hRM_TR_EMPPOSITIONTableAdapter.Connection != null))) {
                     return this._hRM_TR_EMPPOSITIONTableAdapter.Connection;
                 }
+                if (((this._hRM_TR_PAYREDUCETableAdapter != null) 
+                            && (this._hRM_TR_PAYREDUCETableAdapter.Connection != null))) {
+                    return this._hRM_TR_PAYREDUCETableAdapter.Connection;
+                }
+                if (((this._hRM_TR_PAYTAXDETAILTableAdapter != null) 
+                            && (this._hRM_TR_PAYTAXDETAILTableAdapter.Connection != null))) {
+                    return this._hRM_TR_PAYTAXDETAILTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -31349,6 +34365,12 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                 if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
                     count = (count + 1);
                 }
+                if ((this._hRM_TR_PAYREDUCETableAdapter != null)) {
+                    count = (count + 1);
+                }
+                if ((this._hRM_TR_PAYTAXDETAILTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -31360,39 +34382,12 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateUpdatedRows(dsPAmodule dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._hRM_MT_INITIALTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hRM_TR_EMPPROVIDENTTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPPROVIDENT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_COMBRANCHTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_COMBRANCH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_COMBRANCHTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_MT_LEVELTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_LEVEL.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_LEVELTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYPFTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYPF.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYPFTableAdapter.Update(updatedRows));
+                    result = (result + this._hRM_TR_EMPPROVIDENTTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -31405,30 +34400,12 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hRM_TR_EMPPROVIDENTTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPPROVIDENT.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hRM_TR_PAYPFTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYPF.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPPROVIDENTTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYBANKTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYBANK.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYBANKTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPBANKTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPBANK.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPBANKTableAdapter.Update(updatedRows));
+                    result = (result + this._hRM_TR_PAYPFTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -31441,12 +34418,66 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hRM_TR_EMPADDRESSTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPADDRESS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hRM_TR_EMPBANKTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPBANK.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPADDRESSTableAdapter.Update(updatedRows));
+                    result = (result + this._hRM_TR_EMPBANKTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYBANKTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYBANK.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYBANKTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYREDUCETableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYREDUCE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYREDUCETableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYTAXDETAILTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYTAXDETAIL.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYTAXDETAILTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_MT_LEVELTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_LEVEL.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_MT_LEVELTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_COMBRANCHTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_COMBRANCH.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_COMBRANCHTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -31459,66 +34490,12 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hRM_TR_COMADDRESSTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_COMADDRESS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hRM_TR_EMPADDRESSTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPADDRESS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_COMADDRESSTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPCARDTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPCARD.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPCARDTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_COMCARDTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_COMCARD.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_COMCARDTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_MT_DEPTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_DEP.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_DEPTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYTRANTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYTRAN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYTRANTableAdapter.Update(updatedRows));
-                    allChangedRows.AddRange(updatedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYITEMTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYITEM.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
-                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
-                if (((updatedRows != null) 
-                            && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYITEMTableAdapter.Update(updatedRows));
+                    result = (result + this._hRM_TR_EMPADDRESSTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -31531,12 +34508,30 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hRM_MT_WORKERTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hRM_TR_PAYITEMTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYITEM.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(updatedRows));
+                    result = (result + this._hRM_TR_PAYITEMTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYTRANTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_PAYTRAN.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYTRANTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_MT_INITIALTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -31549,6 +34544,24 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
+            if ((this._hRM_MT_WORKERTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPCARDTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPCARD.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPCARDTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             if ((this._hRM_MT_PROVINCETableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_PROVINCE.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
@@ -31558,12 +34571,39 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(updatedRows);
                 }
             }
-            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
-                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+            if ((this._hRM_TR_COMADDRESSTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_COMADDRESS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
                 updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
                 if (((updatedRows != null) 
                             && (0 < updatedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(updatedRows));
+                    result = (result + this._hRM_TR_COMADDRESSTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_MT_DEPTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_MT_DEP.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_MT_DEPTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
+            if ((this._hRM_TR_COMCARDTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.HRM_TR_COMCARD.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._hRM_TR_COMCARDTableAdapter.Update(updatedRows));
                     allChangedRows.AddRange(updatedRows);
                 }
             }
@@ -31577,35 +34617,11 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateInsertedRows(dsPAmodule dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
-            if ((this._hRM_MT_INITIALTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hRM_TR_EMPPROVIDENTTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPPROVIDENT.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_COMBRANCHTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_COMBRANCH.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_COMBRANCHTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_MT_LEVELTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_LEVEL.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_LEVELTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYPFTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYPF.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYPFTableAdapter.Update(addedRows));
+                    result = (result + this._hRM_TR_EMPPROVIDENTTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -31617,27 +34633,11 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hRM_TR_EMPPROVIDENTTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPPROVIDENT.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hRM_TR_PAYPFTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYPF.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPPROVIDENTTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYBANKTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYBANK.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYBANKTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPBANKTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPBANK.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPBANKTableAdapter.Update(addedRows));
+                    result = (result + this._hRM_TR_PAYPFTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -31649,11 +34649,59 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hRM_TR_EMPADDRESSTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPADDRESS.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hRM_TR_EMPBANKTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPBANK.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPADDRESSTableAdapter.Update(addedRows));
+                    result = (result + this._hRM_TR_EMPBANKTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYBANKTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYBANK.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYBANKTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYREDUCETableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYREDUCE.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYREDUCETableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYTAXDETAILTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYTAXDETAIL.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYTAXDETAILTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_MT_LEVELTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_LEVEL.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_MT_LEVELTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_COMBRANCHTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_COMBRANCH.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_COMBRANCHTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -31665,59 +34713,11 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hRM_TR_COMADDRESSTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_COMADDRESS.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hRM_TR_EMPADDRESSTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPADDRESS.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_COMADDRESSTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPCARDTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPCARD.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPCARDTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_COMCARDTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_COMCARD.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_COMCARDTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_MT_DEPTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_DEP.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_DEPTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYTRANTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYTRAN.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYTRANTableAdapter.Update(addedRows));
-                    allAddedRows.AddRange(addedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYITEMTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYITEM.Select(null, null, global::System.Data.DataViewRowState.Added);
-                if (((addedRows != null) 
-                            && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYITEMTableAdapter.Update(addedRows));
+                    result = (result + this._hRM_TR_EMPADDRESSTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -31729,11 +34729,27 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hRM_MT_WORKERTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hRM_TR_PAYITEMTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYITEM.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(addedRows));
+                    result = (result + this._hRM_TR_PAYITEMTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYTRANTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_PAYTRAN.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYTRANTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_MT_INITIALTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -31745,6 +34761,22 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
+            if ((this._hRM_MT_WORKERTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPCARDTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPCARD.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPCARDTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             if ((this._hRM_MT_PROVINCETableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_PROVINCE.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
@@ -31753,11 +34785,35 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allAddedRows.AddRange(addedRows);
                 }
             }
-            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
-                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.Added);
+            if ((this._hRM_TR_COMADDRESSTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_COMADDRESS.Select(null, null, global::System.Data.DataViewRowState.Added);
                 if (((addedRows != null) 
                             && (0 < addedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(addedRows));
+                    result = (result + this._hRM_TR_COMADDRESSTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_MT_DEPTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_MT_DEP.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_MT_DEPTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
+            if ((this._hRM_TR_COMCARDTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.HRM_TR_COMCARD.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._hRM_TR_COMCARDTableAdapter.Update(addedRows));
                     allAddedRows.AddRange(addedRows);
                 }
             }
@@ -31771,67 +34827,11 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private int UpdateDeletedRows(dsPAmodule dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
-            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hRM_TR_COMCARDTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_COMCARD.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_PROVINCETableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_PROVINCE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_PROVINCETableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_ITEMTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_ITEM.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_ITEMTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_WORKERTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPDEPTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPDEP.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPDEPTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYITEMTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYITEM.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYITEMTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYTRANTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYTRAN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYTRANTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(deletedRows));
+                    result = (result + this._hRM_TR_COMCARDTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -31843,19 +34843,11 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hRM_TR_COMCARDTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_COMCARD.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hRM_MT_COMPANYTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_COMPANY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_COMCARDTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPCARDTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPCARD.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPCARDTableAdapter.Update(deletedRows));
+                    result = (result + this._hRM_MT_COMPANYTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -31867,11 +34859,67 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hRM_MT_POSITIONTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_POSITION.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hRM_MT_PROVINCETableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_PROVINCE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_POSITIONTableAdapter.Update(deletedRows));
+                    result = (result + this._hRM_MT_PROVINCETableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPCARDTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPCARD.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPCARDTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_MT_WORKERTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_WORKER.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_MT_WORKERTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_MT_ITEMTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_ITEM.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_MT_ITEMTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_MT_INITIALTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYTRANTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYTRAN.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYTRANTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYITEMTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYITEM.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYITEMTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPDEPTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPDEP.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPDEPTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -31883,59 +34931,11 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hRM_MT_BANKTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_BANK.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hRM_MT_POSITIONTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_POSITION.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_BANKTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPBANKTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPBANK.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPBANKTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYBANKTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYBANK.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYBANKTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPPROVIDENTTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPPROVIDENT.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPPROVIDENTTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_EMPSALARYTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPSALARY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_EMPSALARYTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_TR_PAYPFTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYPF.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_TR_PAYPFTableAdapter.Update(deletedRows));
-                    allChangedRows.AddRange(deletedRows);
-                }
-            }
-            if ((this._hRM_MT_LEVELTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_LEVEL.Select(null, null, global::System.Data.DataViewRowState.Deleted);
-                if (((deletedRows != null) 
-                            && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_LEVELTableAdapter.Update(deletedRows));
+                    result = (result + this._hRM_MT_POSITIONTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -31947,11 +34947,83 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                     allChangedRows.AddRange(deletedRows);
                 }
             }
-            if ((this._hRM_MT_INITIALTableAdapter != null)) {
-                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_INITIAL.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+            if ((this._hRM_MT_LEVELTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_LEVEL.Select(null, null, global::System.Data.DataViewRowState.Deleted);
                 if (((deletedRows != null) 
                             && (0 < deletedRows.Length))) {
-                    result = (result + this._hRM_MT_INITIALTableAdapter.Update(deletedRows));
+                    result = (result + this._hRM_MT_LEVELTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYTAXDETAILTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYTAXDETAIL.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYTAXDETAILTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYREDUCETableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYREDUCE.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYREDUCETableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPPOSITION.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPPOSITIONTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYBANKTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYBANK.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYBANKTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPBANKTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPBANK.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPBANKTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_MT_BANKTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_MT_BANK.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_MT_BANKTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_PAYPFTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_PAYPF.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_PAYPFTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPSALARYTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPSALARY.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPSALARYTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
+            if ((this._hRM_TR_EMPPROVIDENTTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.HRM_TR_EMPPROVIDENT.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._hRM_TR_EMPPROVIDENTTableAdapter.Update(deletedRows));
                     allChangedRows.AddRange(deletedRows);
                 }
             }
@@ -32106,6 +35178,16 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
             }
             if (((this._hRM_TR_EMPPOSITIONTableAdapter != null) 
                         && (this.MatchTableAdapterConnection(this._hRM_TR_EMPPOSITIONTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._hRM_TR_PAYREDUCETableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._hRM_TR_PAYREDUCETableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
+            }
+            if (((this._hRM_TR_PAYTAXDETAILTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._hRM_TR_PAYTAXDETAILTableAdapter.Connection) == false))) {
                 throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
                         "tring.");
             }
@@ -32348,6 +35430,24 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                         adaptersWithAcceptChangesDuringUpdate.Add(this._hRM_TR_EMPPOSITIONTableAdapter.Adapter);
                     }
                 }
+                if ((this._hRM_TR_PAYREDUCETableAdapter != null)) {
+                    revertConnections.Add(this._hRM_TR_PAYREDUCETableAdapter, this._hRM_TR_PAYREDUCETableAdapter.Connection);
+                    this._hRM_TR_PAYREDUCETableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._hRM_TR_PAYREDUCETableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._hRM_TR_PAYREDUCETableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._hRM_TR_PAYREDUCETableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._hRM_TR_PAYREDUCETableAdapter.Adapter);
+                    }
+                }
+                if ((this._hRM_TR_PAYTAXDETAILTableAdapter != null)) {
+                    revertConnections.Add(this._hRM_TR_PAYTAXDETAILTableAdapter, this._hRM_TR_PAYTAXDETAILTableAdapter.Connection);
+                    this._hRM_TR_PAYTAXDETAILTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._hRM_TR_PAYTAXDETAILTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._hRM_TR_PAYTAXDETAILTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._hRM_TR_PAYTAXDETAILTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._hRM_TR_PAYTAXDETAILTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -32497,6 +35597,14 @@ namespace WebReporting.Dataset.dsPAmoduleTableAdapters {
                 if ((this._hRM_TR_EMPPOSITIONTableAdapter != null)) {
                     this._hRM_TR_EMPPOSITIONTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._hRM_TR_EMPPOSITIONTableAdapter]));
                     this._hRM_TR_EMPPOSITIONTableAdapter.Transaction = null;
+                }
+                if ((this._hRM_TR_PAYREDUCETableAdapter != null)) {
+                    this._hRM_TR_PAYREDUCETableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._hRM_TR_PAYREDUCETableAdapter]));
+                    this._hRM_TR_PAYREDUCETableAdapter.Transaction = null;
+                }
+                if ((this._hRM_TR_PAYTAXDETAILTableAdapter != null)) {
+                    this._hRM_TR_PAYTAXDETAILTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._hRM_TR_PAYTAXDETAILTableAdapter]));
+                    this._hRM_TR_PAYTAXDETAILTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];
