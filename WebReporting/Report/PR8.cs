@@ -138,7 +138,7 @@ namespace WebReporting.Report {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Year {
+        public CrystalDecisions.Shared.IParameterField Parameter_Language {
             get {
                 return this.DataDefinition.ParameterFields[0];
             }
@@ -146,7 +146,7 @@ namespace WebReporting.Report {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_CompID {
+        public CrystalDecisions.Shared.IParameterField Parameter_CompanyCode {
             get {
                 return this.DataDefinition.ParameterFields[1];
             }
@@ -154,7 +154,7 @@ namespace WebReporting.Report {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_EmpID {
+        public CrystalDecisions.Shared.IParameterField Parameter_FromDate {
             get {
                 return this.DataDefinition.ParameterFields[2];
             }
@@ -162,9 +162,25 @@ namespace WebReporting.Report {
         
         [Browsable(false)]
         [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
-        public CrystalDecisions.Shared.IParameterField Parameter_Language {
+        public CrystalDecisions.Shared.IParameterField Parameter_ToDate {
             get {
                 return this.DataDefinition.ParameterFields[3];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_PrintBy {
+            get {
+                return this.DataDefinition.ParameterFields[4];
+            }
+        }
+        
+        [Browsable(false)]
+        [DesignerSerializationVisibilityAttribute(System.ComponentModel.DesignerSerializationVisibility.Hidden)]
+        public CrystalDecisions.Shared.IParameterField Parameter_PayDate {
+            get {
+                return this.DataDefinition.ParameterFields[5];
             }
         }
     }

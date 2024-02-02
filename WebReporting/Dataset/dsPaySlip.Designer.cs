@@ -48,6 +48,8 @@ namespace WebReporting.Dataset {
         
         private tbTRPRAccumulateDataTable tabletbTRPRAccumulate;
         
+        private tbTRPeriodOTDataTable tabletbTRPeriodOT;
+        
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -111,6 +113,9 @@ namespace WebReporting.Dataset {
                 }
                 if ((ds.Tables["tbTRPRAccumulate"] != null)) {
                     base.Tables.Add(new tbTRPRAccumulateDataTable(ds.Tables["tbTRPRAccumulate"]));
+                }
+                if ((ds.Tables["tbTRPeriodOT"] != null)) {
+                    base.Tables.Add(new tbTRPeriodOTDataTable(ds.Tables["tbTRPeriodOT"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -252,6 +257,16 @@ namespace WebReporting.Dataset {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public tbTRPeriodOTDataTable tbTRPeriodOT {
+            get {
+                return this.tabletbTRPeriodOT;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         [global::System.ComponentModel.BrowsableAttribute(true)]
         [global::System.ComponentModel.DesignerSerializationVisibilityAttribute(global::System.ComponentModel.DesignerSerializationVisibility.Visible)]
         public override global::System.Data.SchemaSerializationMode SchemaSerializationMode {
@@ -352,6 +367,9 @@ namespace WebReporting.Dataset {
                 }
                 if ((ds.Tables["tbTRPRAccumulate"] != null)) {
                     base.Tables.Add(new tbTRPRAccumulateDataTable(ds.Tables["tbTRPRAccumulate"]));
+                }
+                if ((ds.Tables["tbTRPeriodOT"] != null)) {
+                    base.Tables.Add(new tbTRPeriodOTDataTable(ds.Tables["tbTRPeriodOT"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -458,6 +476,12 @@ namespace WebReporting.Dataset {
                     this.tabletbTRPRAccumulate.InitVars();
                 }
             }
+            this.tabletbTRPeriodOT = ((tbTRPeriodOTDataTable)(base.Tables["tbTRPeriodOT"]));
+            if ((initTable == true)) {
+                if ((this.tabletbTRPeriodOT != null)) {
+                    this.tabletbTRPeriodOT.InitVars();
+                }
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -492,6 +516,8 @@ namespace WebReporting.Dataset {
             base.Tables.Add(this.tabletbTRLeaveAccumurate);
             this.tabletbTRPRAccumulate = new tbTRPRAccumulateDataTable();
             base.Tables.Add(this.tabletbTRPRAccumulate);
+            this.tabletbTRPeriodOT = new tbTRPeriodOTDataTable();
+            base.Tables.Add(this.tabletbTRPeriodOT);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -563,6 +589,12 @@ namespace WebReporting.Dataset {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         private bool ShouldSerializetbTRPRAccumulate() {
+            return false;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        private bool ShouldSerializetbTRPeriodOT() {
             return false;
         }
         
@@ -656,6 +688,9 @@ namespace WebReporting.Dataset {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
         public delegate void tbTRPRAccumulateRowChangeEventHandler(object sender, tbTRPRAccumulateRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public delegate void tbTRPeriodOTRowChangeEventHandler(object sender, tbTRPeriodOTRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -4462,6 +4497,449 @@ namespace WebReporting.Dataset {
         }
         
         /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class tbTRPeriodOTDataTable : global::System.Data.TypedTableBase<tbTRPeriodOTRow> {
+            
+            private global::System.Data.DataColumn columnCompID;
+            
+            private global::System.Data.DataColumn columnEmpID;
+            
+            private global::System.Data.DataColumn columnPeriodID;
+            
+            private global::System.Data.DataColumn columnPeriodYear;
+            
+            private global::System.Data.DataColumn columnPayDate;
+            
+            private global::System.Data.DataColumn columnRate1;
+            
+            private global::System.Data.DataColumn columnRate2;
+            
+            private global::System.Data.DataColumn columnRate3;
+            
+            private global::System.Data.DataColumn columnRate4;
+            
+            private global::System.Data.DataColumn columnRate5;
+            
+            private global::System.Data.DataColumn columnRateMoney1;
+            
+            private global::System.Data.DataColumn columnRateMoney2;
+            
+            private global::System.Data.DataColumn columnRateMoney3;
+            
+            private global::System.Data.DataColumn columnRateMoney4;
+            
+            private global::System.Data.DataColumn columnRateMoney5;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbTRPeriodOTDataTable() {
+                this.TableName = "tbTRPeriodOT";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbTRPeriodOTDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected tbTRPeriodOTDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn CompIDColumn {
+                get {
+                    return this.columnCompID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn EmpIDColumn {
+                get {
+                    return this.columnEmpID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PeriodIDColumn {
+                get {
+                    return this.columnPeriodID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PeriodYearColumn {
+                get {
+                    return this.columnPeriodYear;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn PayDateColumn {
+                get {
+                    return this.columnPayDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Rate1Column {
+                get {
+                    return this.columnRate1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Rate2Column {
+                get {
+                    return this.columnRate2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Rate3Column {
+                get {
+                    return this.columnRate3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Rate4Column {
+                get {
+                    return this.columnRate4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn Rate5Column {
+                get {
+                    return this.columnRate5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RateMoney1Column {
+                get {
+                    return this.columnRateMoney1;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RateMoney2Column {
+                get {
+                    return this.columnRateMoney2;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RateMoney3Column {
+                get {
+                    return this.columnRateMoney3;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RateMoney4Column {
+                get {
+                    return this.columnRateMoney4;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn RateMoney5Column {
+                get {
+                    return this.columnRateMoney5;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbTRPeriodOTRow this[int index] {
+                get {
+                    return ((tbTRPeriodOTRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbTRPeriodOTRowChangeEventHandler tbTRPeriodOTRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbTRPeriodOTRowChangeEventHandler tbTRPeriodOTRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbTRPeriodOTRowChangeEventHandler tbTRPeriodOTRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public event tbTRPeriodOTRowChangeEventHandler tbTRPeriodOTRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void AddtbTRPeriodOTRow(tbTRPeriodOTRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbTRPeriodOTRow AddtbTRPeriodOTRow(string CompID, string EmpID, string PeriodID, string PeriodYear, System.DateTime PayDate, double Rate1, double Rate2, double Rate3, double Rate4, double Rate5, double RateMoney1, double RateMoney2, double RateMoney3, double RateMoney4, double RateMoney5) {
+                tbTRPeriodOTRow rowtbTRPeriodOTRow = ((tbTRPeriodOTRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        CompID,
+                        EmpID,
+                        PeriodID,
+                        PeriodYear,
+                        PayDate,
+                        Rate1,
+                        Rate2,
+                        Rate3,
+                        Rate4,
+                        Rate5,
+                        RateMoney1,
+                        RateMoney2,
+                        RateMoney3,
+                        RateMoney4,
+                        RateMoney5};
+                rowtbTRPeriodOTRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowtbTRPeriodOTRow);
+                return rowtbTRPeriodOTRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                tbTRPeriodOTDataTable cln = ((tbTRPeriodOTDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new tbTRPeriodOTDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal void InitVars() {
+                this.columnCompID = base.Columns["CompID"];
+                this.columnEmpID = base.Columns["EmpID"];
+                this.columnPeriodID = base.Columns["PeriodID"];
+                this.columnPeriodYear = base.Columns["PeriodYear"];
+                this.columnPayDate = base.Columns["PayDate"];
+                this.columnRate1 = base.Columns["Rate1"];
+                this.columnRate2 = base.Columns["Rate2"];
+                this.columnRate3 = base.Columns["Rate3"];
+                this.columnRate4 = base.Columns["Rate4"];
+                this.columnRate5 = base.Columns["Rate5"];
+                this.columnRateMoney1 = base.Columns["RateMoney1"];
+                this.columnRateMoney2 = base.Columns["RateMoney2"];
+                this.columnRateMoney3 = base.Columns["RateMoney3"];
+                this.columnRateMoney4 = base.Columns["RateMoney4"];
+                this.columnRateMoney5 = base.Columns["RateMoney5"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            private void InitClass() {
+                this.columnCompID = new global::System.Data.DataColumn("CompID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCompID);
+                this.columnEmpID = new global::System.Data.DataColumn("EmpID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmpID);
+                this.columnPeriodID = new global::System.Data.DataColumn("PeriodID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPeriodID);
+                this.columnPeriodYear = new global::System.Data.DataColumn("PeriodYear", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPeriodYear);
+                this.columnPayDate = new global::System.Data.DataColumn("PayDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPayDate);
+                this.columnRate1 = new global::System.Data.DataColumn("Rate1", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRate1);
+                this.columnRate2 = new global::System.Data.DataColumn("Rate2", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRate2);
+                this.columnRate3 = new global::System.Data.DataColumn("Rate3", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRate3);
+                this.columnRate4 = new global::System.Data.DataColumn("Rate4", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRate4);
+                this.columnRate5 = new global::System.Data.DataColumn("Rate5", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRate5);
+                this.columnRateMoney1 = new global::System.Data.DataColumn("RateMoney1", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRateMoney1);
+                this.columnRateMoney2 = new global::System.Data.DataColumn("RateMoney2", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRateMoney2);
+                this.columnRateMoney3 = new global::System.Data.DataColumn("RateMoney3", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRateMoney3);
+                this.columnRateMoney4 = new global::System.Data.DataColumn("RateMoney4", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRateMoney4);
+                this.columnRateMoney5 = new global::System.Data.DataColumn("RateMoney5", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnRateMoney5);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbTRPeriodOTRow NewtbTRPeriodOTRow() {
+                return ((tbTRPeriodOTRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new tbTRPeriodOTRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(tbTRPeriodOTRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.tbTRPeriodOTRowChanged != null)) {
+                    this.tbTRPeriodOTRowChanged(this, new tbTRPeriodOTRowChangeEvent(((tbTRPeriodOTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.tbTRPeriodOTRowChanging != null)) {
+                    this.tbTRPeriodOTRowChanging(this, new tbTRPeriodOTRowChangeEvent(((tbTRPeriodOTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.tbTRPeriodOTRowDeleted != null)) {
+                    this.tbTRPeriodOTRowDeleted(this, new tbTRPeriodOTRowChangeEvent(((tbTRPeriodOTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.tbTRPeriodOTRowDeleting != null)) {
+                    this.tbTRPeriodOTRowDeleting(this, new tbTRPeriodOTRowChangeEvent(((tbTRPeriodOTRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void RemovetbTRPeriodOTRow(tbTRPeriodOTRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                dsPaySlip ds = new dsPaySlip();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "tbTRPeriodOTDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
+        
+        /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
         public partial class tbMTCompanyRow : global::System.Data.DataRow {
@@ -6658,6 +7136,441 @@ namespace WebReporting.Dataset {
         }
         
         /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
+        public partial class tbTRPeriodOTRow : global::System.Data.DataRow {
+            
+            private tbTRPeriodOTDataTable tabletbTRPeriodOT;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            internal tbTRPeriodOTRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tabletbTRPeriodOT = ((tbTRPeriodOTDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string CompID {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbTRPeriodOT.CompIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'CompID\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.CompIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string EmpID {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbTRPeriodOT.EmpIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'EmpID\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.EmpIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PeriodID {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbTRPeriodOT.PeriodIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PeriodID\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.PeriodIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public string PeriodYear {
+                get {
+                    try {
+                        return ((string)(this[this.tabletbTRPeriodOT.PeriodYearColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PeriodYear\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.PeriodYearColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public System.DateTime PayDate {
+                get {
+                    try {
+                        return ((global::System.DateTime)(this[this.tabletbTRPeriodOT.PayDateColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'PayDate\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.PayDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Rate1 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.Rate1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Rate1\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.Rate1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Rate2 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.Rate2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Rate2\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.Rate2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Rate3 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.Rate3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Rate3\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.Rate3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Rate4 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.Rate4Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Rate4\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.Rate4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double Rate5 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.Rate5Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Rate5\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.Rate5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double RateMoney1 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.RateMoney1Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RateMoney1\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.RateMoney1Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double RateMoney2 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.RateMoney2Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RateMoney2\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.RateMoney2Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double RateMoney3 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.RateMoney3Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RateMoney3\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.RateMoney3Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double RateMoney4 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.RateMoney4Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RateMoney4\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.RateMoney4Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double RateMoney5 {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPeriodOT.RateMoney5Column]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'RateMoney5\' in table \'tbTRPeriodOT\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPeriodOT.RateMoney5Column] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsCompIDNull() {
+                return this.IsNull(this.tabletbTRPeriodOT.CompIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetCompIDNull() {
+                this[this.tabletbTRPeriodOT.CompIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsEmpIDNull() {
+                return this.IsNull(this.tabletbTRPeriodOT.EmpIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetEmpIDNull() {
+                this[this.tabletbTRPeriodOT.EmpIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPeriodIDNull() {
+                return this.IsNull(this.tabletbTRPeriodOT.PeriodIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPeriodIDNull() {
+                this[this.tabletbTRPeriodOT.PeriodIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPeriodYearNull() {
+                return this.IsNull(this.tabletbTRPeriodOT.PeriodYearColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPeriodYearNull() {
+                this[this.tabletbTRPeriodOT.PeriodYearColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsPayDateNull() {
+                return this.IsNull(this.tabletbTRPeriodOT.PayDateColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetPayDateNull() {
+                this[this.tabletbTRPeriodOT.PayDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRate1Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.Rate1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRate1Null() {
+                this[this.tabletbTRPeriodOT.Rate1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRate2Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.Rate2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRate2Null() {
+                this[this.tabletbTRPeriodOT.Rate2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRate3Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.Rate3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRate3Null() {
+                this[this.tabletbTRPeriodOT.Rate3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRate4Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.Rate4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRate4Null() {
+                this[this.tabletbTRPeriodOT.Rate4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRate5Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.Rate5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRate5Null() {
+                this[this.tabletbTRPeriodOT.Rate5Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRateMoney1Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.RateMoney1Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRateMoney1Null() {
+                this[this.tabletbTRPeriodOT.RateMoney1Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRateMoney2Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.RateMoney2Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRateMoney2Null() {
+                this[this.tabletbTRPeriodOT.RateMoney2Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRateMoney3Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.RateMoney3Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRateMoney3Null() {
+                this[this.tabletbTRPeriodOT.RateMoney3Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRateMoney4Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.RateMoney4Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRateMoney4Null() {
+                this[this.tabletbTRPeriodOT.RateMoney4Column] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsRateMoney5Null() {
+                return this.IsNull(this.tabletbTRPeriodOT.RateMoney5Column);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetRateMoney5Null() {
+                this[this.tabletbTRPeriodOT.RateMoney5Column] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
@@ -7051,6 +7964,40 @@ namespace WebReporting.Dataset {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public tbTRPRAccumulateRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+        public class tbTRPeriodOTRowChangeEvent : global::System.EventArgs {
+            
+            private tbTRPeriodOTRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbTRPeriodOTRowChangeEvent(tbTRPeriodOTRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public tbTRPeriodOTRow Row {
                 get {
                     return this.eventRow;
                 }
