@@ -2232,6 +2232,10 @@ namespace WebReporting.Dataset {
             
             private global::System.Data.DataColumn columnNetPay;
             
+            private global::System.Data.DataColumn columnNetPayC;
+            
+            private global::System.Data.DataColumn columnNetPayB;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public tbTRPRPaytranDataTable() {
@@ -2339,6 +2343,22 @@ namespace WebReporting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NetPayCColumn {
+                get {
+                    return this.columnNetPayC;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn NetPayBColumn {
+                get {
+                    return this.columnNetPayB;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2374,7 +2394,7 @@ namespace WebReporting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
-            public tbTRPRPaytranRow AddtbTRPRPaytranRow(string CompID, string EmpID, System.DateTime PayDate, double SSO, double Tax, double PFEmpMoney, double TotalIncome, double TotalDeduct, double NetPay) {
+            public tbTRPRPaytranRow AddtbTRPRPaytranRow(string CompID, string EmpID, System.DateTime PayDate, double SSO, double Tax, double PFEmpMoney, double TotalIncome, double TotalDeduct, double NetPay, double NetPayC, double NetPayB) {
                 tbTRPRPaytranRow rowtbTRPRPaytranRow = ((tbTRPRPaytranRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         CompID,
@@ -2385,7 +2405,9 @@ namespace WebReporting.Dataset {
                         PFEmpMoney,
                         TotalIncome,
                         TotalDeduct,
-                        NetPay};
+                        NetPay,
+                        NetPayC,
+                        NetPayB};
                 rowtbTRPRPaytranRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbTRPRPaytranRow);
                 return rowtbTRPRPaytranRow;
@@ -2417,6 +2439,8 @@ namespace WebReporting.Dataset {
                 this.columnTotalIncome = base.Columns["TotalIncome"];
                 this.columnTotalDeduct = base.Columns["TotalDeduct"];
                 this.columnNetPay = base.Columns["NetPay"];
+                this.columnNetPayC = base.Columns["NetPayC"];
+                this.columnNetPayB = base.Columns["NetPayB"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2440,6 +2464,10 @@ namespace WebReporting.Dataset {
                 base.Columns.Add(this.columnTotalDeduct);
                 this.columnNetPay = new global::System.Data.DataColumn("NetPay", typeof(double), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnNetPay);
+                this.columnNetPayC = new global::System.Data.DataColumn("NetPayC", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNetPayC);
+                this.columnNetPayB = new global::System.Data.DataColumn("NetPayB", typeof(double), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNetPayB);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5874,6 +5902,38 @@ namespace WebReporting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double NetPayC {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPRPaytran.NetPayCColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NetPayC\' in table \'tbTRPRPaytran\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPRPaytran.NetPayCColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public double NetPayB {
+                get {
+                    try {
+                        return ((double)(this[this.tabletbTRPRPaytran.NetPayBColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'NetPayB\' in table \'tbTRPRPaytran\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTRPRPaytran.NetPayBColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsCompIDNull() {
                 return this.IsNull(this.tabletbTRPRPaytran.CompIDColumn);
             }
@@ -5978,6 +6038,30 @@ namespace WebReporting.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetNetPayNull() {
                 this[this.tabletbTRPRPaytran.NetPayColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNetPayCNull() {
+                return this.IsNull(this.tabletbTRPRPaytran.NetPayCColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNetPayCNull() {
+                this[this.tabletbTRPRPaytran.NetPayCColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsNetPayBNull() {
+                return this.IsNull(this.tabletbTRPRPaytran.NetPayBColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetNetPayBNull() {
+                this[this.tabletbTRPRPaytran.NetPayBColumn] = global::System.Convert.DBNull;
             }
         }
         
