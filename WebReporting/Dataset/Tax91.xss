@@ -7,21 +7,21 @@
 <DiagramLayout xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ex:showrelationlabel="False" ViewPortX="26" ViewPortY="8" xmlns:ex="urn:schemas-microsoft-com:xml-msdatasource-layout-extended" xmlns="urn:schemas-microsoft-com:xml-msdatasource-layout">
   <Shapes>
     <Shape ID="DesignTable:tbMTCompany" ZOrder="16" X="37" Y="33" Height="195" Width="175" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="191" />
-    <Shape ID="DesignTable:tbMTEmpMain" ZOrder="11" X="219" Y="29" Height="425" Width="175" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="421" />
+    <Shape ID="DesignTable:tbMTEmpMain" ZOrder="12" X="219" Y="29" Height="425" Width="175" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="421" />
     <Shape ID="DesignTable:tbMTInitial" ZOrder="15" X="395" Y="31" Height="103" Width="118" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
-    <Shape ID="DesignTable:tbTempReportPNGD" ZOrder="14" X="516" Y="32" Height="218" Width="181" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="214" />
-    <Shape ID="DesignTable:tbTRPRAccumulate" ZOrder="7" X="700" Y="32" Height="471" Width="206" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="467" />
-    <Shape ID="DesignTable:tbTRPRTaxResign" ZOrder="6" X="938" Y="18" Height="217" Width="195" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="213" />
-    <Shape ID="DesignTable:tbTREmpChild" ZOrder="13" X="395" Y="132" Height="126" Width="114" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
-    <Shape ID="DesignTable:tbMTProvince" ZOrder="4" X="1070" Y="241" Height="103" Width="137" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
-    <Shape ID="DesignTable:tbTRCompBranch" ZOrder="12" X="36" Y="232" Height="172" Width="194" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="168" />
-    <Shape ID="DesignTable:tbTRPRPaytran" ZOrder="5" X="1184" Y="19" Height="241" Width="177" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="237" />
-    <Shape ID="DesignTable:vwLevel01" ZOrder="3" X="909" Y="246" Height="103" Width="135" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
-    <Shape ID="DesignTable:vwLevel02" ZOrder="2" X="982" Y="358" Height="103" Width="139" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
-    <Shape ID="DesignTable:tbMTPart" ZOrder="10" X="1229" Y="324" Height="126" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
-    <Shape ID="DesignTable:tbMTAllwDeducType" ZOrder="9" X="399" Y="261" Height="126" Width="111" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
-    <Shape ID="DesignTable:vwAllowDeduct" ZOrder="8" X="516" Y="258" Height="218" Width="181" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="214" />
-    <Shape ID="DesignTable:tbMTEmpType" ZOrder="1" X="43" Y="409" Height="102" Width="173" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="98" />
+    <Shape ID="DesignTable:tbTempReportPNGD" ZOrder="1" X="516" Y="32" Height="257" Width="200" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="253" />
+    <Shape ID="DesignTable:tbTRPRAccumulate" ZOrder="8" X="700" Y="32" Height="471" Width="206" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="467" />
+    <Shape ID="DesignTable:tbTRPRTaxResign" ZOrder="7" X="938" Y="18" Height="217" Width="195" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="213" />
+    <Shape ID="DesignTable:tbTREmpChild" ZOrder="14" X="395" Y="132" Height="126" Width="114" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
+    <Shape ID="DesignTable:tbMTProvince" ZOrder="5" X="1070" Y="241" Height="103" Width="137" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
+    <Shape ID="DesignTable:tbTRCompBranch" ZOrder="13" X="36" Y="232" Height="172" Width="194" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="168" />
+    <Shape ID="DesignTable:tbTRPRPaytran" ZOrder="6" X="1184" Y="19" Height="241" Width="177" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="237" />
+    <Shape ID="DesignTable:vwLevel01" ZOrder="4" X="909" Y="246" Height="103" Width="135" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
+    <Shape ID="DesignTable:vwLevel02" ZOrder="3" X="982" Y="358" Height="103" Width="139" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="99" />
+    <Shape ID="DesignTable:tbMTPart" ZOrder="11" X="1229" Y="324" Height="126" Width="150" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
+    <Shape ID="DesignTable:tbMTAllwDeducType" ZOrder="10" X="399" Y="261" Height="126" Width="111" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="122" />
+    <Shape ID="DesignTable:vwAllowDeduct" ZOrder="9" X="516" Y="258" Height="218" Width="181" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="214" />
+    <Shape ID="DesignTable:tbMTEmpType" ZOrder="2" X="43" Y="409" Height="102" Width="173" AdapterExpanded="true" DataTableExpanded="true" OldAdapterHeight="0" OldDataTableHeight="0" SplitterPosition="98" />
   </Shapes>
   <Connectors />
 </DiagramLayout>

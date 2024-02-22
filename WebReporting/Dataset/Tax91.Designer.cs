@@ -2263,6 +2263,10 @@ namespace WebReporting.Dataset {
             
             private global::System.Data.DataColumn columnReduceSport;
             
+            private global::System.Data.DataColumn columnTaxNa;
+            
+            private global::System.Data.DataColumn columnTotalTax;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public tbTempReportPNGDDataTable() {
@@ -2674,6 +2678,22 @@ namespace WebReporting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TaxNaColumn {
+                get {
+                    return this.columnTaxNa;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public global::System.Data.DataColumn TotalTaxColumn {
+                get {
+                    return this.columnTotalTax;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -2756,7 +2776,9 @@ namespace WebReporting.Dataset {
                         decimal ReduceAntenatalCare, 
                         decimal ReducePartyDonation, 
                         decimal ReduceSSFX, 
-                        decimal ReduceSport) {
+                        decimal ReduceSport, 
+                        decimal TaxNa, 
+                        decimal TotalTax) {
                 tbTempReportPNGDRow rowtbTempReportPNGDRow = ((tbTempReportPNGDRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         CompID,
@@ -2805,7 +2827,9 @@ namespace WebReporting.Dataset {
                         ReduceAntenatalCare,
                         ReducePartyDonation,
                         ReduceSSFX,
-                        ReduceSport};
+                        ReduceSport,
+                        TaxNa,
+                        TotalTax};
                 rowtbTempReportPNGDRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbTempReportPNGDRow);
                 return rowtbTempReportPNGDRow;
@@ -2875,6 +2899,8 @@ namespace WebReporting.Dataset {
                 this.columnReducePartyDonation = base.Columns["ReducePartyDonation"];
                 this.columnReduceSSFX = base.Columns["ReduceSSFX"];
                 this.columnReduceSport = base.Columns["ReduceSport"];
+                this.columnTaxNa = base.Columns["TaxNa"];
+                this.columnTotalTax = base.Columns["TotalTax"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2974,6 +3000,10 @@ namespace WebReporting.Dataset {
                 base.Columns.Add(this.columnReduceSSFX);
                 this.columnReduceSport = new global::System.Data.DataColumn("ReduceSport", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnReduceSport);
+                this.columnTaxNa = new global::System.Data.DataColumn("TaxNa", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTaxNa);
+                this.columnTotalTax = new global::System.Data.DataColumn("TotalTax", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnTotalTax);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -9101,6 +9131,38 @@ namespace WebReporting.Dataset {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal TaxNa {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbTempReportPNGD.TaxNaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TaxNa\' in table \'tbTempReportPNGD\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTempReportPNGD.TaxNaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public decimal TotalTax {
+                get {
+                    try {
+                        return ((decimal)(this[this.tabletbTempReportPNGD.TotalTaxColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalTax\' in table \'tbTempReportPNGD\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbTempReportPNGD.TotalTaxColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public bool IsCompIDNull() {
                 return this.IsNull(this.tabletbTempReportPNGD.CompIDColumn);
             }
@@ -9661,6 +9723,30 @@ namespace WebReporting.Dataset {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
             public void SetReduceSportNull() {
                 this[this.tabletbTempReportPNGD.ReduceSportColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTaxNaNull() {
+                return this.IsNull(this.tabletbTempReportPNGD.TaxNaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTaxNaNull() {
+                this[this.tabletbTempReportPNGD.TaxNaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public bool IsTotalTaxNull() {
+                return this.IsNull(this.tabletbTempReportPNGD.TotalTaxColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "4.0.0.0")]
+            public void SetTotalTaxNull() {
+                this[this.tabletbTempReportPNGD.TotalTaxColumn] = global::System.Convert.DBNull;
             }
         }
         

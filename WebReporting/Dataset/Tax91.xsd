@@ -125,6 +125,8 @@
               <xs:element name="ReducePartyDonation" msprop:Generator_ColumnVarNameInTable="columnReducePartyDonation" msprop:Generator_ColumnPropNameInRow="ReducePartyDonation" msprop:Generator_ColumnPropNameInTable="ReducePartyDonationColumn" msprop:Generator_UserColumnName="ReducePartyDonation" type="xs:decimal" minOccurs="0" />
               <xs:element name="ReduceSSFX" msprop:Generator_ColumnVarNameInTable="columnReduceSSFX" msprop:Generator_ColumnPropNameInRow="ReduceSSFX" msprop:Generator_ColumnPropNameInTable="ReduceSSFXColumn" msprop:Generator_UserColumnName="ReduceSSFX" type="xs:decimal" minOccurs="0" />
               <xs:element name="ReduceSport" msprop:Generator_ColumnVarNameInTable="columnReduceSport" msprop:Generator_ColumnPropNameInRow="ReduceSport" msprop:Generator_ColumnPropNameInTable="ReduceSportColumn" msprop:Generator_UserColumnName="ReduceSport" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TaxNa" msprop:Generator_ColumnVarNameInTable="columnTaxNa" msprop:Generator_ColumnPropNameInRow="TaxNa" msprop:Generator_ColumnPropNameInTable="TaxNaColumn" msprop:Generator_UserColumnName="TaxNa" type="xs:decimal" minOccurs="0" />
+              <xs:element name="TotalTax" msprop:Generator_ColumnVarNameInTable="columnTotalTax" msprop:Generator_ColumnPropNameInRow="TotalTax" msprop:Generator_ColumnPropNameInTable="TotalTaxColumn" msprop:Generator_UserColumnName="TotalTax" type="xs:decimal" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
