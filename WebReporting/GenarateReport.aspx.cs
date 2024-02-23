@@ -1094,7 +1094,9 @@ namespace WebReporting
                 objStr.Append(" SELECT *");
                 objStr.Append(" FROM HRM_TR_PAYTRAN");
                 objStr.Append(" WHERE COMPANY_CODE='" + obj.company_code + "'");
-                objStr.Append(" AND PAYTRAN_PAYDATE = '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "'");
+                //objStr.Append(" AND PAYTRAN_PAYDATE = '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "'");
+                objStr.Append(" AND MONTH(PAYTRAN_PAYDATE) = '" + obj.reportjob_paydate.ToString("MM") + "'");
+                objStr.Append(" AND YEAR(PAYTRAN_PAYDATE) = '" + obj.reportjob_paydate.ToString("yyyy") + "'");
                 objStr.Append(" AND WORKER_CODE IN (" + strEmpID + ")");
                 dt = objConn.doGetTable(objStr.ToString(), "HRM_TR_PAYTRAN");
                 ds.Tables.Add(dt);
@@ -1929,7 +1931,7 @@ namespace WebReporting
                 objStr = new StringBuilder();
                 objStr.Append(" SELECT ");
                 objStr.Append(" a.COMPANY_CODE AS CompID ");
-                objStr.Append(", a.WORKER_CODE AS EmpID ");
+                objStr.Append(", a.WORKER_CODE AS EmpNo ");
                 objStr.Append(", a.PAYTRAN_PAYDATE AS PayDate ");
 
                 objStr.Append(", ISNULL((SELECT TOP 1 PAYREDUCE_AMOUNT FROM HRM_TR_PAYREDUCE WHERE WORKER_CODE = a.WORKER_CODE AND COMPANY_CODE = a.COMPANY_CODE AND PAYREDUCE_PAYDATE = a.PAYTRAN_PAYDATE AND REDUCE_CODE = '01'),0) AS ReducePerson ");
@@ -1990,7 +1992,7 @@ namespace WebReporting
                 objStr.Append(" INNER JOIN HRM_TR_PAYTAXDETAIL b ON b.WORKER_CODE = a.WORKER_CODE AND b.COMPANY_CODE = a.COMPANY_CODE AND PAYTAXDETAIL_PAYDATE = a.PAYTRAN_PAYDATE ");
 
                 objStr.Append(" WHERE a.COMPANY_CODE='" + obj.company_code + "'");
-                objStr.Append(" AND PAYTRAN_PAYDATE IN (SELECT PERIOD_PAYMENT FROM HRM_MT_PERIOD WHERE YEAR_CODE='" + obj.reportjob_paydate.ToString("yyyy") + "' AND PERIOD_PAYMENT <= '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "' )");
+                objStr.Append(" AND PAYTRAN_PAYDATE IN (SELECT PERIOD_PAYMENT FROM HRM_MT_PERIOD WHERE YEAR_CODE='" + obj.reportjob_paydate.ToString("yyyy") + "' AND PERIOD_PAYMENT = '" + obj.reportjob_paydate.ToString("MM/dd/yyyy") + "' )");
                 objStr.Append(" AND a.WORKER_CODE IN (" + strEmpID + ")");
                 dt = objConn.doGetTable(objStr.ToString(), "tbTempReportPNGD");
                 ds.Tables.Add(dt);
